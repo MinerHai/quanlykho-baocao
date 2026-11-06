@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Table, Button, Form, Select, Space, Tag, message, Typography, Modal, Popconfirm } from 'antd';
-import { UserOutlined, DeleteOutlined, KeyOutlined } from '@ant-design/icons';
+import { UserOutlined, DeleteOutlined, KeyOutlined, CheckCircleOutlined } from '@ant-design/icons';
 import axiosClient from '../../api/axiosClient';
 
 const { Title } = Typography;
@@ -11,7 +11,22 @@ const UserList = () => {
     const [loading, setLoading] = useState(false);
     const [roleModalOpen, setRoleModalOpen] = useState(false);
     const [selectedUser, setSelectedUser] = useState(null);
+    const [onlyPending, setOnlyPending] = useState(false);
     const [form] = Form.useForm();
+
+    const isPending = (u) => u.isApproved === false;
+    const pendingCount = users.filter(isPending).length;
+    const visibleUsers = onlyPending ? users.filter(isPending) : users;
+
+    const handleApprove = async (id) => {
+        try {
+            await axiosClient.patch(`/users/admin/users/${id}/approve`, { approved: true });
+            message.success('Đã duyệt tài khoản, người dùng có thể đăng nhập');
+            fetchUsers();
+        } catch (error) {
+            message.error(error.response?.data?.message || 'Lỗi khi duyệt tài khoản');
+        }
+    };
 
     const fetchUsers = async () => {
         setLoading(true);
@@ -102,11 +117,29 @@ const UserList = () => {
             ),
         },
         {
+            title: 'Trạng thái',
+            key: 'approval',
+            render: (_, record) =>
+                isPending(record) ? <Tag color="orange">Chờ duyệt</Tag> : <Tag color="green">Đã duyệt</Tag>,
+        },
+        {
             title: 'Hành động',
             key: 'actions',
             align: 'center',
             render: (_, record) => (
                 <Space>
+                    {isPending(record) && (
+                        <Popconfirm
+                            title="Duyệt tài khoản này để cho phép đăng nhập?"
+                            onConfirm={() => handleApprove(record._id)}
+                            okText="Duyệt"
+                            cancelText="Hủy"
+                        >
+                            <Button type="primary" size="small" icon={<CheckCircleOutlined />} style={{ background: '#16a34a' }}>
+                                Duyệt
+                            </Button>
+                        </Popconfirm>
+                    )}
                     <Button
                         type="primary"
                         size="small"
@@ -156,9 +189,18 @@ const UserList = () => {
                 </div>
             </div>
 
+            <div className="flex items-center gap-3 mb-4">
+                <Tag color={pendingCount > 0 ? 'orange' : 'default'} style={{ fontSize: 14, padding: '4px 10px' }}>
+                    Chờ duyệt: {pendingCount}
+                </Tag>
+                <Button size="small" type={onlyPending ? 'primary' : 'default'} onClick={() => setOnlyPending(!onlyPending)}>
+                    {onlyPending ? 'Hiện tất cả' : 'Chỉ hiện tài khoản chờ duyệt'}
+                </Button>
+            </div>
+
             <Table
                 columns={columns}
-                dataSource={users}
+                dataSource={visibleUsers}
                 rowKey="_id"
                 loading={loading}
                 pagination={{ pageSize: 15 }}

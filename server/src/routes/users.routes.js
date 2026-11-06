@@ -39,6 +39,7 @@ router.get('/message-chatbot', authUser, asyncHandler(userController.getMessageC
 // Admin only routes
 router.get('/admin/users', authUser, authorize('admin'), asyncHandler(userController.getAllUser));
 router.put('/admin/users/:id', authUser, authorize('admin'), asyncHandler(userController.updateUserAdmin));
+router.patch('/admin/users/:id/approve', authUser, authorize('admin'), asyncHandler(userController.approveUser));
 router.delete('/admin/users/:id', authUser, authorize('admin'), asyncHandler(userController.deleteUser));
 
 module.exports = router;

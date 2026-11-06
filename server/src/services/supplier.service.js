@@ -90,6 +90,45 @@ class SupplierService {
         return supplier;
     }
 
+    /**
+     * Các đơn nhập hàng giữa cửa hàng và 1 nhà cung cấp, kèm thống kê tổng hợp.
+     * Tổng SL / tổng tiền chỉ tính phiếu đã hoàn thành (hàng đã thực sự vào kho).
+     */
+    async getSupplierOrders(id, query = {}) {
+        const supplier = await modelSupplier.findById(id);
+        if (!supplier) {
+            throw new NotFoundError('Nhà cung cấp không tồn tại');
+        }
+
+        const modelImport = require('../models/import.model');
+        const filter = { supplier: supplier._id };
+        if (query.status) filter.status = query.status;
+
+        const orders = await modelImport
+            .find(filter)
+            .populate('createdBy', 'fullName')
+            .sort({ importDate: -1, createdAt: -1 })
+            .lean();
+
+        const completed = orders.filter((o) => o.status === 'completed');
+        const effectiveDate = (o) => o.importDate || o.createdAt;
+        const lastCompleted = completed.map(effectiveDate).sort((a, b) => new Date(b) - new Date(a))[0] || null;
+
+        return {
+            supplier,
+            summary: {
+                totalOrders: orders.length,
+                completedOrders: completed.length,
+                pendingOrders: orders.filter((o) => o.status === 'pending').length,
+                cancelledOrders: orders.filter((o) => o.status === 'cancelled').length,
+                totalQuantity: completed.reduce((s, o) => s + (o.totalItems || 0), 0),
+                totalAmount: completed.reduce((s, o) => s + (o.totalAmount || 0), 0),
+                lastImportDate: lastCompleted,
+            },
+            orders,
+        };
+    }
+
     async getAllSuppliersSimple() {
         return await modelSupplier.find({ status: 'active' }).select('_id name code').sort({ name: 1 });
     }

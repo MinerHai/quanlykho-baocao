@@ -50,9 +50,8 @@ export const AuthProvider = ({ children }) => {
     };
 
     const register = async (fullName, email, password) => {
-        const res = await axiosClient.post('/users/register', { fullName, email, password });
-        await fetchUser();
-        return res;
+        // Tài khoản mới chờ admin duyệt nên chưa đăng nhập, không gọi fetchUser
+        return axiosClient.post('/users/register', { fullName, email, password });
     };
 
     const logout = async () => {

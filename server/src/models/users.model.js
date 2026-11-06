@@ -16,6 +16,9 @@ const modelUser = new Schema(
             default: 'staff',
         },
         isLocked: { type: Boolean, default: false },
+        // false = đăng ký mới, đang chờ admin duyệt. Tài khoản cũ (không có field) coi như đã duyệt.
+        isApproved: { type: Boolean, default: true },
+        approvedAt: { type: Date, default: null },
         typeLogin: { type: String, enum: ['email', 'google'], default: 'email' },
         avatar: { type: String, default: '' },
     },

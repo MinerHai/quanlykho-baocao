@@ -1,4 +1,4 @@
-const { AuthFailureError, ForbiddenError } = require('../core/error.response');
+const { AuthFailureError, ForbiddenError, PendingApprovalError } = require('../core/error.response');
 const { verifyToken } = require('../utils/jwt');
 const modelUser = require('../models/users.model');
 
@@ -18,6 +18,7 @@ const authUser = async (req, res, next) => {
         const user = await modelUser.findById(decoded.id);
         if (!user) throw new AuthFailureError('Tài khoản không tồn tại');
         if (user.isLocked) throw new ForbiddenError('Tài khoản đã bị khóa');
+        if (user.isApproved === false) throw new PendingApprovalError();
 
         req.user = decoded;
         next();

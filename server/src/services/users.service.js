@@ -8,7 +8,7 @@ const { createToken, createRefreshToken, createApiKey, verifyToken } = require('
 const { jwtDecode } = require('jwt-decode');
 const jwt = require('jsonwebtoken');
 
-const { ConflictRequestError, BadRequestError } = require('../core/error.response');
+const { ConflictRequestError, BadRequestError, PendingApprovalError, NotFoundError } = require('../core/error.response');
 
 const otpGenerator = require('otp-generator');
 const bcrypt = require('bcrypt');
@@ -27,18 +27,27 @@ class UserService {
         const salt = bcrypt.genSaltSync(saltRounds);
         const passwordHash = bcrypt.hashSync(password, salt);
 
+        // Đăng ký mới phải chờ admin duyệt, chưa cấp token
         const newUser = await modelUser.create({
             fullName,
             email,
             password: passwordHash,
             typeLogin: 'email',
+            isApproved: false,
         });
 
-        await createApiKey(newUser._id);
-        const token = await createToken({ id: newUser._id });
-        const refreshToken = await createRefreshToken({ id: newUser._id });
+        return { pending: true, email: newUser.email };
+    }
 
-        return { token, refreshToken };
+    async approveUser(id, approved = true) {
+        const user = await modelUser.findById(id);
+        if (!user) {
+            throw new NotFoundError('Tài khoản không tồn tại');
+        }
+        user.isApproved = !!approved;
+        user.approvedAt = approved ? new Date() : null;
+        await user.save();
+        return user;
     }
 
     async authUser(id) {
@@ -65,6 +74,10 @@ class UserService {
         if (!checkPassword) {
             throw new BadRequestError('Tài khoản hoặc mật khẩu không chính xác');
         }
+        // Chỉ báo "chờ duyệt" sau khi đã đúng mật khẩu, tránh lộ email nào đang tồn tại
+        if (user.isApproved === false) {
+            throw new PendingApprovalError();
+        }
         await createApiKey(user._id);
         const token = await createToken({ id: user._id });
         const refreshToken = await createRefreshToken({ id: user._id });
@@ -84,7 +97,8 @@ class UserService {
     }
 
     async getAllUser() {
-        const data = await modelUser.find();
+        // Không trả hash mật khẩu về client
+        const data = await modelUser.find().select('-password').sort({ createdAt: -1 });
         return data;
     }
 
@@ -165,20 +179,22 @@ class UserService {
         const user = await modelUser.findOne({ email: dataToken.email });
 
         if (user) {
+            if (user.isApproved === false) {
+                throw new PendingApprovalError();
+            }
             await createApiKey(user._id);
             const token = await createToken({ id: user._id });
             const refreshToken = await createRefreshToken({ id: user._id });
             return { token, refreshToken };
         } else {
-            const newUser = await modelUser.create({
+            // Tài khoản Google mới cũng phải chờ duyệt
+            await modelUser.create({
                 email: dataToken.email,
                 typeLogin: 'google',
                 fullName: dataToken.name,
+                isApproved: false,
             });
-            await createApiKey(newUser._id);
-            const token = await createToken({ id: newUser._id });
-            const refreshToken = await createRefreshToken({ id: newUser._id });
-            return { token, refreshToken };
+            throw new PendingApprovalError();
         }
     }
 

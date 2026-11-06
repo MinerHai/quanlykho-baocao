@@ -35,16 +35,23 @@ class UserController {
             throw new BadRequestError('Vui lòng nhập đầy đủ thông tin');
         }
 
-        const { token, refreshToken } = await UserService.createUser({ fullName, email, password });
+        const data = await UserService.createUser({ fullName, email, password });
 
-        setCookie(res, token, refreshToken);
+        // Không cấp cookie đăng nhập: tài khoản mới phải chờ admin duyệt
+        return new OK({
+            message: 'Đăng ký thành công. Tài khoản đang chờ quản trị viên xét duyệt để đăng nhập.',
+            metadata: data,
+        }).send(res);
+    }
 
-        const data = {
-            token,
-            refreshToken,
-        };
-
-        return new OK({ message: 'Tạo user thành công', metadata: data }).send(res);
+    async approveUser(req, res) {
+        const { id } = req.params;
+        const approved = req.body.approved !== false;
+        const user = await UserService.approveUser(id, approved);
+        return new OK({
+            message: approved ? 'Đã duyệt tài khoản' : 'Đã chuyển tài khoản về trạng thái chờ duyệt',
+            metadata: user,
+        }).send(res);
     }
 
     async login(req, res) {

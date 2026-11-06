@@ -1,13 +1,14 @@
 import { useState } from 'react';
 import logoImg from '../../assets/logo.png';
 import { Link, useNavigate } from 'react-router-dom';
-import { Form, Input, Button, Divider } from 'antd';
+import { Form, Input, Button, Divider, Result } from 'antd';
 import { UserOutlined, MailOutlined, LockOutlined } from '@ant-design/icons';
 import { useAuth } from '../../context/AuthContext';
 import { toast } from 'react-toastify';
 
 const Register = () => {
     const [loading, setLoading] = useState(false);
+    const [submittedEmail, setSubmittedEmail] = useState('');
     const { register } = useAuth();
     const navigate = useNavigate();
 
@@ -15,14 +16,37 @@ const Register = () => {
         setLoading(true);
         try {
             await register(values.fullName, values.email, values.password);
-            toast.success('Đăng ký thành công!');
-            navigate('/dashboard');
+            setSubmittedEmail(values.email);
         } catch (error) {
             toast.error(error.response?.data?.message || 'Đăng ký thất bại');
         } finally {
             setLoading(false);
         }
     };
+
+    if (submittedEmail) {
+        return (
+            <div className="auth-container">
+                <div className="auth-card">
+                    <Result
+                        status="success"
+                        title="Đăng ký thành công"
+                        subTitle={
+                            <>
+                                Tài khoản <b>{submittedEmail}</b> đang <b>chờ quản trị viên xét duyệt</b>. Bạn chỉ đăng
+                                nhập được vào hệ thống sau khi tài khoản được duyệt.
+                            </>
+                        }
+                        extra={
+                            <Button type="primary" onClick={() => navigate('/login')}>
+                                Về trang đăng nhập
+                            </Button>
+                        }
+                    />
+                </div>
+            </div>
+        );
+    }
 
     return (
         <div className="auth-container">

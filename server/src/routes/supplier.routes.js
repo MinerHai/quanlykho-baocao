@@ -5,6 +5,7 @@ const { asyncHandler, authUser, authorize } = require('../auth/checkAuth');
 
 router.get('/simple', authUser, asyncHandler(supplierController.getSimpleList));
 router.get('/', authUser, asyncHandler(supplierController.getAll));
+router.get('/:id/orders', authUser, asyncHandler(supplierController.getOrders));
 router.get('/:id', authUser, asyncHandler(supplierController.getById));
 router.post('/', authUser, authorize('admin', 'manager'), asyncHandler(supplierController.create));
 router.put('/:id', authUser, authorize('admin', 'manager'), asyncHandler(supplierController.update));

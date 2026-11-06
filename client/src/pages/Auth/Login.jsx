@@ -1,24 +1,30 @@
 import { useState } from 'react';
 import logoImg from '../../assets/logo.png';
 import { Link, useNavigate } from 'react-router-dom';
-import { Form, Input, Button, Divider } from 'antd';
+import { Form, Input, Button, Divider, Alert } from 'antd';
 import { MailOutlined, LockOutlined } from '@ant-design/icons';
 import { useAuth } from '../../context/AuthContext';
 import { toast } from 'react-toastify';
 
 const Login = () => {
     const [loading, setLoading] = useState(false);
+    const [pending, setPending] = useState(false);
     const { login } = useAuth();
     const navigate = useNavigate();
 
     const onFinish = async (values) => {
         setLoading(true);
+        setPending(false);
         try {
             await login(values.email, values.password);
             toast.success('Đăng nhập thành công!');
             navigate('/dashboard');
         } catch (error) {
-            toast.error(error.response?.data?.message || 'Đăng nhập thất bại');
+            if (error.response?.data?.code === 'ACCOUNT_PENDING') {
+                setPending(true);
+            } else {
+                toast.error(error.response?.data?.message || 'Đăng nhập thất bại');
+            }
         } finally {
             setLoading(false);
         }
@@ -36,6 +42,16 @@ const Login = () => {
                     <h1>Hải Hương</h1>
                     <p>Hệ thống quản lý kho — Đăng nhập để tiếp tục</p>
                 </div>
+
+                {pending && (
+                    <Alert
+                        type="warning"
+                        showIcon
+                        style={{ marginBottom: 16 }}
+                        message="Tài khoản đang chờ xét duyệt"
+                        description="Quản trị viên chưa duyệt tài khoản của bạn. Vui lòng đợi được duyệt rồi đăng nhập lại."
+                    />
+                )}
 
                 <Form
                     name="login"

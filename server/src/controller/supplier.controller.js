@@ -17,6 +17,11 @@ class SupplierController {
         new OK({ message: 'success', metadata: supplier }).send(res);
     }
 
+    async getOrders(req, res) {
+        const data = await SupplierService.getSupplierOrders(req.params.id, req.query);
+        new OK({ message: 'success', metadata: data }).send(res);
+    }
+
     async update(req, res) {
         const supplier = await SupplierService.updateSupplier(req.params.id, req.body);
         new OK({ message: 'Cập nhật nhà cung cấp thành công', metadata: supplier }).send(res);

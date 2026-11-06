@@ -72,6 +72,16 @@ class ForbiddenError extends ErrorResponse {
 }
 
 /**
+ * Tài khoản chưa được admin xét duyệt - Mã lỗi 403, kèm code để client nhận biết
+ */
+class PendingApprovalError extends ForbiddenError {
+    constructor(message = 'Tài khoản đang chờ xét duyệt. Vui lòng đợi quản trị viên duyệt để đăng nhập vào hệ thống.') {
+        super(message);
+        this.code = 'ACCOUNT_PENDING';
+    }
+}
+
+/**
  * Lỗi server - Mã lỗi 500
  * Sử dụng khi có lỗi không mong muốn xảy ra trên server
  * Ví dụ: Lỗi kết nối database, lỗi xử lý dữ liệu
@@ -133,6 +143,7 @@ module.exports = {
     AuthFailureError,
     NotFoundError,
     ForbiddenError,
+    PendingApprovalError,
     InternalServerError,
     BadGatewayError,
     ServiceUnavailableError,

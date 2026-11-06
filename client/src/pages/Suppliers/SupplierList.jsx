@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import {
     Table, Button, Modal, Form, Input, Select, Space, Tag,
-    Popconfirm, Card, Row, Col, Descriptions, message,
+    Popconfirm, Card, Row, Col, Descriptions, message, Statistic, Empty,
 } from 'antd';
+import dayjs from 'dayjs';
 import {
     PlusOutlined, EditOutlined, DeleteOutlined, SearchOutlined,
     EyeOutlined, PhoneOutlined, MailOutlined, EnvironmentOutlined,
@@ -11,12 +12,24 @@ import axiosClient from '../../api/axiosClient';
 
 const { Option } = Select;
 
+const formatMoney = (n) => `${(n || 0).toLocaleString('vi-VN')} đ`;
+const formatDateTime = (d) => (d ? dayjs(d).format('DD/MM/YYYY HH:mm') : '—');
+
+const ORDER_STATUS = {
+    draft: { color: 'default', text: 'Nháp' },
+    pending: { color: 'orange', text: 'Chờ duyệt' },
+    completed: { color: 'green', text: 'Hoàn thành' },
+    cancelled: { color: 'red', text: 'Đã hủy' },
+};
+
 const SupplierList = () => {
     const [suppliers, setSuppliers] = useState([]);
     const [loading, setLoading] = useState(false);
     const [modalOpen, setModalOpen] = useState(false);
     const [detailOpen, setDetailOpen] = useState(false);
     const [selectedSupplier, setSelectedSupplier] = useState(null);
+    const [orderData, setOrderData] = useState(null);
+    const [ordersLoading, setOrdersLoading] = useState(false);
     const [editingSupplier, setEditingSupplier] = useState(null);
     const [searchText, setSearchText] = useState('');
     const [filterStatus, setFilterStatus] = useState('');
@@ -83,10 +96,51 @@ const SupplierList = () => {
         setModalOpen(true);
     };
 
-    const handleView = (record) => {
+    const handleView = async (record) => {
         setSelectedSupplier(record);
+        setOrderData(null);
         setDetailOpen(true);
+        setOrdersLoading(true);
+        try {
+            const res = await axiosClient.get(`/suppliers/${record._id}/orders`);
+            setOrderData(res.metadata);
+        } catch (error) {
+            message.error(error.response?.data?.message || 'Không tải được đơn hàng của nhà cung cấp');
+        } finally {
+            setOrdersLoading(false);
+        }
     };
+
+    const orderColumns = [
+        { title: 'Mã phiếu', dataIndex: 'code', key: 'code', width: 100, render: (c) => <b style={{ color: '#4F46E5' }}>{c}</b> },
+        {
+            title: 'Ngày giờ nhập hàng',
+            key: 'importDate',
+            width: 160,
+            render: (_, o) => formatDateTime(o.importDate || o.createdAt),
+            sorter: (a, b) => new Date(a.importDate || a.createdAt) - new Date(b.importDate || b.createdAt),
+            defaultSortOrder: 'descend',
+        },
+        { title: 'Tạo phiếu lúc', dataIndex: 'createdAt', key: 'createdAt', width: 150, render: formatDateTime },
+        { title: 'Số lượng', dataIndex: 'totalItems', key: 'totalItems', width: 90, align: 'right' },
+        { title: 'Tổng tiền', dataIndex: 'totalAmount', key: 'totalAmount', width: 130, align: 'right', render: formatMoney },
+        {
+            title: 'Trạng thái',
+            dataIndex: 'status',
+            key: 'status',
+            width: 110,
+            align: 'center',
+            render: (s) => <Tag color={ORDER_STATUS[s]?.color}>{ORDER_STATUS[s]?.text || s}</Tag>,
+        },
+    ];
+
+    const itemColumns = [
+        { title: 'Sản phẩm', dataIndex: 'productName', key: 'productName' },
+        { title: 'SKU', dataIndex: 'sku', key: 'sku', width: 110 },
+        { title: 'SL', dataIndex: 'quantity', key: 'quantity', width: 70, align: 'right' },
+        { title: 'Giá nhập', dataIndex: 'importPrice', key: 'importPrice', width: 120, align: 'right', render: formatMoney },
+        { title: 'Thành tiền', dataIndex: 'totalPrice', key: 'totalPrice', width: 130, align: 'right', render: formatMoney },
+    ];
 
     const columns = [
         {
@@ -286,10 +340,10 @@ const SupplierList = () => {
                 open={detailOpen}
                 onCancel={() => setDetailOpen(false)}
                 footer={<Button onClick={() => setDetailOpen(false)}>Đóng</Button>}
-                width={600}
+                width={920}
             >
                 {selectedSupplier && (
-                    <Descriptions column={1} bordered size="small" className="mt-4">
+                    <Descriptions column={2} bordered size="small" className="mt-4">
                         <Descriptions.Item label="Mã NCC">{selectedSupplier.code}</Descriptions.Item>
                         <Descriptions.Item label="Tên">{selectedSupplier.name}</Descriptions.Item>
                         <Descriptions.Item label="Người liên hệ">{selectedSupplier.contactPerson || '—'}</Descriptions.Item>
@@ -302,9 +356,41 @@ const SupplierList = () => {
                                 {selectedSupplier.status === 'active' ? 'Đang hợp tác' : 'Ngừng hợp tác'}
                             </Tag>
                         </Descriptions.Item>
-                        <Descriptions.Item label="Ghi chú">{selectedSupplier.note || '—'}</Descriptions.Item>
+                        <Descriptions.Item label="Ghi chú" span={2}>{selectedSupplier.note || '—'}</Descriptions.Item>
                     </Descriptions>
                 )}
+
+                <h4 style={{ margin: '20px 0 10px', fontWeight: 600, color: '#1E293B' }}>
+                    Đơn hàng hợp tác giữa hai bên
+                </h4>
+                {orderData && (
+                    <Row gutter={12} style={{ marginBottom: 14 }}>
+                        <Col span={6}><Card size="small"><Statistic title="Tổng đơn nhập" value={orderData.summary.totalOrders} /></Card></Col>
+                        <Col span={6}><Card size="small"><Statistic title="Tổng SL đã nhập" value={orderData.summary.totalQuantity} /></Card></Col>
+                        <Col span={6}><Card size="small"><Statistic title="Tổng giá trị" value={formatMoney(orderData.summary.totalAmount)} valueStyle={{ fontSize: 18 }} /></Card></Col>
+                        <Col span={6}><Card size="small"><Statistic title="Lần nhập gần nhất" value={formatDateTime(orderData.summary.lastImportDate)} valueStyle={{ fontSize: 16 }} /></Card></Col>
+                    </Row>
+                )}
+                <Table
+                    size="small"
+                    rowKey="_id"
+                    loading={ordersLoading}
+                    columns={orderColumns}
+                    dataSource={orderData?.orders || []}
+                    pagination={{ pageSize: 5, showSizeChanger: false }}
+                    locale={{ emptyText: <Empty description="Chưa có đơn nhập hàng nào với nhà cung cấp này" /> }}
+                    expandable={{
+                        expandedRowRender: (o) => (
+                            <Table
+                                size="small"
+                                rowKey="_id"
+                                columns={itemColumns}
+                                dataSource={o.items}
+                                pagination={false}
+                            />
+                        ),
+                    }}
+                />
             </Modal>
         </div>
     );
