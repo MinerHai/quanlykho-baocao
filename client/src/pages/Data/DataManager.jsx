@@ -12,7 +12,7 @@ import {
     WarningOutlined,
 } from '@ant-design/icons';
 import * as XLSX from 'xlsx';
-import { saveAs } from 'file-saver';
+import { createWorkbook, addTableSheet, downloadWorkbook } from '../../utils/excelExport';
 import axiosClient from '../../api/axiosClient';
 
 const DataManager = () => {
@@ -71,10 +71,12 @@ const DataManager = () => {
             'Giá bán': p.salePrice,
         }));
 
-        downloadExcel(
-            data,
-            'Danh_sach_san_pham'
-        );
+        await downloadExcel(data, 'Danh_sach_san_pham', {
+            title: 'Danh sách sản phẩm',
+            moneyKeys: ['Giá nhập', 'Giá bán'],
+            intKeys: ['Tồn kho'],
+            totalKeys: ['Tồn kho'],
+        });
 
         message.success({
             content: `Đã xuất ${data.length} sản phẩm`,
@@ -88,7 +90,7 @@ const DataManager = () => {
         });
         }
     };
-    const handleConfirmExport = () => {
+    const handleConfirmExport = async () => {
         const selected = productsList.filter((p) => selectedProductKeys.includes(p._id));
         if (selected.length === 0) {
             message.warning('Vui lòng chọn ít nhất 1 sản phẩm để xuất');
@@ -104,7 +106,12 @@ const DataManager = () => {
             'Số lượng nhập thêm': 0, // Cột dành để người dùng nhập số để cộng thêm vào kho
         }));
 
-        downloadExcel(data, 'Danh_sach_cap_nhat_ton_kho');
+        // plain: giữ header ở dòng 1 để chức năng Import đọc lại được file này
+        await downloadExcel(data, 'Danh_sach_cap_nhat_ton_kho', {
+            title: 'Cập nhật tồn kho',
+            plain: true,
+            intKeys: ['Tồn kho hiện tại', 'Số lượng nhập thêm'],
+        });
         setExportModalOpen(false);
         message.success({ content: `Đã xuất ${data.length} sản phẩm để cập nhật`, key: 'export' });
     };
@@ -133,7 +140,12 @@ const DataManager = () => {
                 'Ngày tạo': new Date(d.createdAt).toLocaleDateString('vi-VN'),
             }));
 
-            downloadExcel(data, 'Phieu_nhap_kho');
+            await downloadExcel(data, 'Phieu_nhap_kho', {
+                title: 'Danh sách phiếu nhập kho',
+                moneyKeys: ['Tổng tiền'],
+                intKeys: ['Số SP', 'Tổng SL'],
+                totalKeys: ['Số SP', 'Tổng SL', 'Tổng tiền'],
+            });
             message.success({ content: `Đã xuất ${data.length} phiếu nhập`, key: 'export' });
         } catch (e) {
             message.error({ content: 'Xuất thất bại', key: 'export' });
@@ -172,7 +184,12 @@ const DataManager = () => {
                 'Ngày tạo': new Date(d.createdAt).toLocaleDateString('vi-VN'),
             }));
 
-            downloadExcel(data, 'Phieu_xuat_kho');
+            await downloadExcel(data, 'Phieu_xuat_kho', {
+                title: 'Danh sách phiếu xuất kho',
+                moneyKeys: ['Tổng tiền'],
+                intKeys: ['Số SP', 'Tổng SL'],
+                totalKeys: ['Số SP', 'Tổng SL', 'Tổng tiền'],
+            });
             message.success({ content: `Đã xuất ${data.length} phiếu xuất`, key: 'export' });
         } catch (e) {
             message.error({ content: 'Xuất thất bại', key: 'export' });
@@ -200,7 +217,12 @@ const DataManager = () => {
                 'Trạng thái': p.quantity <= 0 ? 'Hết hàng' : p.quantity <= p.minStock ? 'Sắp hết' : 'Đủ hàng',
             }));
 
-            downloadExcel(data, 'Ton_kho');
+            await downloadExcel(data, 'Ton_kho', {
+                title: 'Báo cáo tồn kho',
+                moneyKeys: ['Giá nhập', 'Giá bán', 'Giá trị tồn'],
+                intKeys: ['Tồn kho', 'Tối thiểu'],
+                totalKeys: ['Tồn kho', 'Giá trị tồn'],
+            });
             message.success({ content: `Đã xuất ${data.length} sản phẩm`, key: 'export' });
         } catch (e) {
             message.error({ content: 'Xuất thất bại', key: 'export' });
@@ -430,25 +452,25 @@ const DataManager = () => {
     };
 
     // ==================== UTILS ====================
-    const downloadExcel = (data, filename) => {
-        const ws = XLSX.utils.json_to_sheet(data);
-
-        // Auto width
-        const colWidths = Object.keys(data[0] || {}).map((key) => {
-            const maxLen = Math.max(key.length, ...data.map((r) => String(r[key] || '').length));
-            return { wch: Math.min(maxLen + 2, 40) };
+    const downloadExcel = async (data, filename, opts = {}) => {
+        const { title, plain = false, moneyKeys = [], intKeys = [], totalKeys = [] } = opts;
+        const keys = Object.keys(data[0] || {});
+        const columns = keys.map((k) => ({
+            header: k,
+            key: k,
+            type: k === 'STT' ? 'center' : moneyKeys.includes(k) ? 'money' : intKeys.includes(k) ? 'int' : undefined,
+        }));
+        const wb = await createWorkbook();
+        addTableSheet(wb, {
+            name: title || 'Data',
+            title: title || 'Dữ liệu',
+            subtitle: `${data.length} dòng — xuất ngày ${new Date().toLocaleDateString('vi-VN')}`,
+            columns,
+            rows: data,
+            totals: totalKeys.length ? { label: 'TỔNG CỘNG', keys: totalKeys } : undefined,
+            plain,
         });
-        ws['!cols'] = colWidths;
-
-        const wb = XLSX.utils.book_new();
-        XLSX.utils.book_append_sheet(wb, ws, 'Data');
-        const buf = XLSX.write(wb, { bookType: 'xlsx', type: 'array' });
-        saveAs(
-            new Blob([buf], {
-                type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset=UTF-8',
-            }),
-            `${filename}_${new Date().toLocaleDateString('vi-VN').replace(/\//g, '-')}.xlsx`,
-        );
+        await downloadWorkbook(wb, `${filename}_${new Date().toLocaleDateString('vi-VN').replace(/\//g, '-')}.xlsx`);
     };
 
     const downloadTemplate = openExportModal;

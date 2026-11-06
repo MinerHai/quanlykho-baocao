@@ -280,6 +280,15 @@ const ProductList = () => {
             responsive: ['lg'],
         },
         {
+            title: 'Nhà cung cấp',
+            dataIndex: ['supplier', 'name'],
+            key: 'supplier',
+            width: 140,
+            ellipsis: true,
+            responsive: ['lg'],
+            render: (name) => name || '—',
+        },
+        {
             title: 'Giá bán',
             dataIndex: 'salePrice',
             key: 'salePrice',
@@ -374,6 +383,27 @@ const ProductList = () => {
             label: 'Thông tin cơ bản',
             children: (
                 <>
+                    <Form.Item
+                        name="supplier"
+                        label="Hợp tác với nhà cung cấp nào?"
+                        tooltip="Nhà cung cấp cung ứng sản phẩm này. Phiếu nhập kho của sản phẩm sẽ gắn với nhà cung cấp này."
+                        rules={[{ required: true, message: 'Vui lòng chọn nhà cung cấp hợp tác' }]}
+                        extra={
+                            suppliers.length === 0
+                                ? 'Chưa có nhà cung cấp đang hợp tác. Hãy thêm ở mục "Nhà cung cấp" trước.'
+                                : `${suppliers.length} nhà cung cấp đang hợp tác`
+                        }
+                    >
+                        <Select
+                            placeholder="Chọn nhà cung cấp hợp tác với sản phẩm này"
+                            showSearch
+                            optionFilterProp="label"
+                            options={suppliers.map((s) => ({
+                                value: s._id,
+                                label: `${s.code ? `[${s.code}] ` : ''}${s.name}`,
+                            }))}
+                        />
+                    </Form.Item>
                     <Row gutter={16}>
                         <Col span={16}>
                             <Form.Item
@@ -391,7 +421,7 @@ const ProductList = () => {
                         </Col>
                     </Row>
                     <Row gutter={16}>
-                        <Col span={12}>
+                        <Col span={24}>
                             <Form.Item
                                 name="category"
                                 label="Danh mục"
@@ -401,21 +431,6 @@ const ProductList = () => {
                                     {categories.map((c) => (
                                         <Option key={c._id} value={c._id}>
                                             {c.name}
-                                        </Option>
-                                    ))}
-                                </Select>
-                            </Form.Item>
-                        </Col>
-                        <Col span={12}>
-                            <Form.Item
-                                name="supplier"
-                                label="Nhà cung cấp"
-                                rules={[{ required: true, message: 'Chọn NCC' }]}
-                            >
-                                <Select placeholder="Chọn NCC" showSearch optionFilterProp="children">
-                                    {suppliers.map((s) => (
-                                        <Option key={s._id} value={s._id}>
-                                            {s.name}
                                         </Option>
                                     ))}
                                 </Select>

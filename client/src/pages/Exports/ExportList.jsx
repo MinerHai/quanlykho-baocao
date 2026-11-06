@@ -19,6 +19,7 @@ import {
     message,
     DatePicker,
     Tooltip,
+    Dropdown,
 } from 'antd';
 import {
     PlusOutlined,
@@ -30,10 +31,11 @@ import {
     SearchOutlined,
     FileTextOutlined,
     DownloadOutlined,
+    PrinterOutlined,
 } from '@ant-design/icons';
 import axiosClient from '../../api/axiosClient';
 import { useAuth } from '../../context/AuthContext';
-import * as XLSX from 'xlsx';
+import { createWorkbook, addTableSheet, downloadWorkbook, exportInvoiceExcel, printInvoice, EXPORT_TYPE, EXPORT_STATUS } from '../../utils/excelExport';
 
 const { Option } = Select;
 const { TextArea } = Input;
@@ -135,92 +137,84 @@ const ExportList = () => {
                 return;
             }
 
-            const typeLabel = {
-                sale: 'Bán hàng',
-                return_supplier: 'Trả NCC',
-                damaged: 'Hàng hỏng',
-                transfer: 'Chuyển kho',
-                other: 'Khác',
-            };
-            const statusLabel = { draft: 'Nháp', pending: 'Chờ duyệt', completed: 'Đã xuất', cancelled: 'Đã hủy' };
+            const notCancelled = (r) => r.rawStatus !== 'cancelled';
+            const wb = await createWorkbook();
+            const periodText = `Tháng ${month + 1}/${year}`;
 
-            // Sheet 1: Danh sách phiếu xuất
-            const summaryRows = data.map((exp, idx) => ({
-                STT: idx + 1,
-                'Mã phiếu': exp.code,
-                'Loại xuất': typeLabel[exp.type] || exp.type,
-                'Người nhận': exp.receiver || '',
-                'Số sản phẩm': exp.items?.length || 0,
-                'Tổng số lượng': exp.totalItems,
-                'Tổng tiền (VNĐ)': exp.totalAmount,
-                'Trạng thái': statusLabel[exp.status] || exp.status,
-                'Người tạo': exp.createdBy?.fullName || '',
-                'Ngày xuất kho': exp.exportDate
-                    ? new Date(exp.exportDate).toLocaleString('vi-VN')
-                    : exp.createdAt
-                      ? new Date(exp.createdAt).toLocaleString('vi-VN')
-                      : '',
-                'Ghi chú': exp.note || '',
-            }));
+            addTableSheet(wb, {
+                name: 'Danh sách phiếu xuất',
+                title: 'Báo cáo phiếu xuất kho',
+                subtitle: `${periodText} — ${data.length} phiếu (tổng cộng không tính phiếu đã hủy)`,
+                columns: [
+                    { header: 'STT', key: 'stt', width: 6, type: 'center' },
+                    { header: 'Mã phiếu', key: 'code', width: 14 },
+                    { header: 'Loại xuất', key: 'type', width: 13, type: 'center' },
+                    { header: 'Người nhận', key: 'receiver', width: 22 },
+                    { header: 'Số SP', key: 'products', width: 9, type: 'int' },
+                    { header: 'Tổng SL', key: 'qty', width: 11, type: 'int' },
+                    { header: 'Tổng tiền (VNĐ)', key: 'amount', width: 18, type: 'money' },
+                    { header: 'Trạng thái', key: 'status', width: 13, type: 'center' },
+                    { header: 'Người tạo', key: 'creator', width: 18 },
+                    { header: 'Ngày giờ xuất kho', key: 'date', width: 18, type: 'datetime' },
+                    { header: 'Ghi chú', key: 'note', width: 28 },
+                ],
+                rows: data.map((exp, idx) => ({
+                    stt: idx + 1,
+                    code: exp.code,
+                    type: EXPORT_TYPE[exp.type] || exp.type,
+                    receiver: exp.receiver || '',
+                    products: exp.items?.length || 0,
+                    qty: exp.totalItems || 0,
+                    amount: exp.totalAmount || 0,
+                    status: EXPORT_STATUS[exp.status] || exp.status,
+                    rawStatus: exp.status,
+                    creator: exp.createdBy?.fullName || '',
+                    date: new Date(exp.exportDate || exp.createdAt),
+                    note: exp.note || '',
+                })),
+                totals: { label: 'TỔNG CỘNG', keys: ['products', 'qty', 'amount'], include: notCancelled },
+            });
 
-            // Sheet 2: Chi tiết từng sản phẩm
             const detailRows = [];
             data.forEach((exp) => {
                 (exp.items || []).forEach((item) => {
                     detailRows.push({
-                        'Mã phiếu': exp.code,
-                        'Ngày xuất kho': exp.exportDate
-                            ? new Date(exp.exportDate).toLocaleString('vi-VN')
-                            : exp.createdAt
-                              ? new Date(exp.createdAt).toLocaleString('vi-VN')
-                              : '',
-                        'Loại xuất': typeLabel[exp.type] || exp.type,
-                        'Người nhận': exp.receiver || '',
-                        'Mã SP': item.sku,
-                        'Tên sản phẩm': item.productName,
-                        'Số lượng': item.quantity,
-                        'Đơn giá xuất (VNĐ)': item.exportPrice,
-                        'Thành tiền (VNĐ)': item.totalPrice,
-                        'Trạng thái phiếu': statusLabel[exp.status] || exp.status,
+                        code: exp.code,
+                        date: new Date(exp.exportDate || exp.createdAt),
+                        type: EXPORT_TYPE[exp.type] || exp.type,
+                        receiver: exp.receiver || '',
+                        sku: item.sku,
+                        name: item.productName,
+                        quantity: item.quantity,
+                        price: item.exportPrice,
+                        total: item.totalPrice,
+                        status: EXPORT_STATUS[exp.status] || exp.status,
+                        rawStatus: exp.status,
                     });
                 });
             });
-
-            const wb = XLSX.utils.book_new();
-            const ws1 = XLSX.utils.json_to_sheet(summaryRows);
-            const ws2 = XLSX.utils.json_to_sheet(detailRows);
-
-            ws1['!cols'] = [
-                { wch: 5 },
-                { wch: 14 },
-                { wch: 12 },
-                { wch: 20 },
-                { wch: 10 },
-                { wch: 12 },
-                { wch: 16 },
-                { wch: 12 },
-                { wch: 16 },
-                { wch: 20 },
-                { wch: 24 },
-            ];
-            ws2['!cols'] = [
-                { wch: 14 },
-                { wch: 20 },
-                { wch: 12 },
-                { wch: 20 },
-                { wch: 10 },
-                { wch: 28 },
-                { wch: 10 },
-                { wch: 18 },
-                { wch: 18 },
-                { wch: 14 },
-            ];
-
-            XLSX.utils.book_append_sheet(wb, ws1, 'Danh sách phiếu xuất');
-            XLSX.utils.book_append_sheet(wb, ws2, 'Chi tiết sản phẩm');
+            addTableSheet(wb, {
+                name: 'Chi tiết sản phẩm',
+                title: 'Chi tiết sản phẩm xuất kho',
+                subtitle: `${periodText} — ${detailRows.length} dòng`,
+                columns: [
+                    { header: 'Mã phiếu', key: 'code', width: 14 },
+                    { header: 'Ngày giờ xuất kho', key: 'date', width: 18, type: 'datetime' },
+                    { header: 'Loại xuất', key: 'type', width: 13, type: 'center' },
+                    { header: 'Người nhận', key: 'receiver', width: 22 },
+                    { header: 'Mã SP', key: 'sku', width: 12 },
+                    { header: 'Tên sản phẩm', key: 'name', width: 34 },
+                    { header: 'Số lượng', key: 'quantity', width: 11, type: 'int' },
+                    { header: 'Đơn giá xuất (VNĐ)', key: 'price', width: 18, type: 'money' },
+                    { header: 'Thành tiền (VNĐ)', key: 'total', width: 18, type: 'money' },
+                    { header: 'Trạng thái phiếu', key: 'status', width: 16, type: 'center' },
+                ],
+                rows: detailRows,
+                totals: { label: 'TỔNG CỘNG', keys: ['quantity', 'total'], include: notCancelled },
+            });
 
             const monthStr = `${String(month + 1).padStart(2, '0')}-${year}`;
-            XLSX.writeFile(wb, `Xuat_Kho_Thang_${monthStr}.xlsx`);
+            await downloadWorkbook(wb, `Xuat_Kho_Thang_${monthStr}.xlsx`);
             message.success(`Đã xuất Excel tháng ${month + 1}/${year} (${data.length} phiếu)`);
         } catch (e) {
             message.error('Xuất Excel thất bại');
@@ -312,6 +306,29 @@ const ExportList = () => {
             message.error(error.response?.data?.message || 'Hủy thất bại');
         }
     };
+
+    // Xuất hóa đơn từng đơn hàng: lấy bản đầy đủ rồi in (Lưu PDF) hoặc tải Excel
+    const handleInvoice = async (record, mode) => {
+        try {
+            const res = await axiosClient.get(`/exports/${record._id}`);
+            if (mode === 'excel') {
+                await exportInvoiceExcel('export', res.metadata);
+                message.success(`Đã xuất hóa đơn ${record.code}`);
+            } else {
+                printInvoice('export', res.metadata);
+            }
+        } catch (error) {
+            message.error('Xuất hóa đơn thất bại');
+        }
+    };
+
+    const invoiceMenu = (record) => ({
+        items: [
+            { key: 'print', label: 'In / Lưu PDF', icon: <PrinterOutlined /> },
+            { key: 'excel', label: 'Tải file Excel', icon: <DownloadOutlined /> },
+        ],
+        onClick: ({ key }) => handleInvoice(record, key),
+    });
 
     const handleView = async (record) => {
         try {
@@ -419,7 +436,7 @@ const ExportList = () => {
         {
             title: 'Thao tác',
             key: 'action',
-            width: 140,
+            width: 170,
             align: 'center',
             render: (_, record) => (
                 <Space>
@@ -429,6 +446,11 @@ const ExportList = () => {
                         onClick={() => handleView(record)}
                         style={{ color: '#06B6D4' }}
                     />
+                    <Dropdown menu={invoiceMenu(record)} trigger={['click']}>
+                        <Tooltip title="Xuất hóa đơn">
+                            <Button type="text" icon={<PrinterOutlined />} style={{ color: '#7C3AED' }} />
+                        </Tooltip>
+                    </Dropdown>
                     {record.status === 'pending' && !isStaff && (
                         <>
                             <Popconfirm
@@ -890,6 +912,11 @@ const ExportList = () => {
                                     <Button danger>Hủy phiếu</Button>
                                 </Popconfirm>
                             </>
+                        )}
+                        {selectedExport && (
+                            <Dropdown menu={invoiceMenu(selectedExport)} trigger={['click']}>
+                                <Button icon={<PrinterOutlined />}>Xuất hóa đơn</Button>
+                            </Dropdown>
                         )}
                         <Button onClick={() => setDetailOpen(false)}>Đóng</Button>
                     </Space>

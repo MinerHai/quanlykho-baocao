@@ -19,6 +19,7 @@ import {
     message,
     DatePicker,
     Tooltip,
+    Dropdown,
 } from 'antd';
 import {
     PlusOutlined,
@@ -30,10 +31,11 @@ import {
     SearchOutlined,
     FileTextOutlined,
     DownloadOutlined,
+    PrinterOutlined,
 } from '@ant-design/icons';
 import axiosClient from '../../api/axiosClient';
 import { useAuth } from '../../context/AuthContext';
-import * as XLSX from 'xlsx';
+import { createWorkbook, addTableSheet, downloadWorkbook, exportInvoiceExcel, printInvoice, IMPORT_STATUS } from '../../utils/excelExport';
 
 const { Option } = Select;
 const { TextArea } = Input;
@@ -123,77 +125,80 @@ const ImportList = () => {
                 return;
             }
 
-            // Sheet 1: Danh sách phiếu nhập
-            const summaryRows = data.map((imp, idx) => ({
-                STT: idx + 1,
-                'Mã phiếu': imp.code,
-                'Nhà cung cấp': imp.supplier?.name || '',
-                'Số sản phẩm': imp.items?.length || 0,
-                'Tổng số lượng': imp.totalItems,
-                'Tổng tiền (VNĐ)': imp.totalAmount,
-                'Trạng thái':
-                    { draft: 'Nháp', pending: 'Chờ duyệt', completed: 'Đã nhập', cancelled: 'Đã hủy' }[imp.status] ||
-                    imp.status,
-                'Người tạo': imp.createdBy?.fullName || '',
-                'Ngày tạo': imp.createdAt ? new Date(imp.createdAt).toLocaleString('vi-VN') : '',
-                'Ghi chú': imp.note || '',
-            }));
+            const notCancelled = (r) => r.rawStatus !== 'cancelled';
+            const wb = await createWorkbook();
+            const periodText = `Tháng ${month + 1}/${year}`;
 
-            // Sheet 2: Chi tiết từng sản phẩm
+            addTableSheet(wb, {
+                name: 'Danh sách phiếu nhập',
+                title: 'Báo cáo phiếu nhập kho',
+                subtitle: `${periodText} — ${data.length} phiếu (tổng cộng không tính phiếu đã hủy)`,
+                columns: [
+                    { header: 'STT', key: 'stt', width: 6, type: 'center' },
+                    { header: 'Mã phiếu', key: 'code', width: 14 },
+                    { header: 'Nhà cung cấp', key: 'supplier', width: 26 },
+                    { header: 'Số SP', key: 'products', width: 9, type: 'int' },
+                    { header: 'Tổng SL', key: 'qty', width: 11, type: 'int' },
+                    { header: 'Tổng tiền (VNĐ)', key: 'amount', width: 18, type: 'money' },
+                    { header: 'Trạng thái', key: 'status', width: 13, type: 'center' },
+                    { header: 'Người tạo', key: 'creator', width: 18 },
+                    { header: 'Ngày giờ nhập', key: 'date', width: 18, type: 'datetime' },
+                    { header: 'Ghi chú', key: 'note', width: 28 },
+                ],
+                rows: data.map((imp, idx) => ({
+                    stt: idx + 1,
+                    code: imp.code,
+                    supplier: imp.supplier?.name || '',
+                    products: imp.items?.length || 0,
+                    qty: imp.totalItems || 0,
+                    amount: imp.totalAmount || 0,
+                    status: IMPORT_STATUS[imp.status] || imp.status,
+                    rawStatus: imp.status,
+                    creator: imp.createdBy?.fullName || '',
+                    date: new Date(imp.importDate || imp.createdAt),
+                    note: imp.note || '',
+                })),
+                totals: { label: 'TỔNG CỘNG', keys: ['products', 'qty', 'amount'], include: notCancelled },
+            });
+
             const detailRows = [];
             data.forEach((imp) => {
                 (imp.items || []).forEach((item) => {
                     detailRows.push({
-                        'Mã phiếu': imp.code,
-                        'Ngày tạo': imp.createdAt ? new Date(imp.createdAt).toLocaleString('vi-VN') : '',
-                        'Nhà cung cấp': imp.supplier?.name || '',
-                        'Mã SP': item.sku,
-                        'Tên sản phẩm': item.productName,
-                        'Số lượng': item.quantity,
-                        'Đơn giá nhập (VNĐ)': item.importPrice,
-                        'Thành tiền (VNĐ)': item.totalPrice,
-                        'Trạng thái phiếu':
-                            { draft: 'Nháp', pending: 'Chờ duyệt', completed: 'Đã nhập', cancelled: 'Đã hủy' }[
-                                imp.status
-                            ] || imp.status,
+                        code: imp.code,
+                        date: new Date(imp.importDate || imp.createdAt),
+                        supplier: imp.supplier?.name || '',
+                        sku: item.sku,
+                        name: item.productName,
+                        quantity: item.quantity,
+                        price: item.importPrice,
+                        total: item.totalPrice,
+                        status: IMPORT_STATUS[imp.status] || imp.status,
+                        rawStatus: imp.status,
                     });
                 });
             });
-
-            const wb = XLSX.utils.book_new();
-            const ws1 = XLSX.utils.json_to_sheet(summaryRows);
-            const ws2 = XLSX.utils.json_to_sheet(detailRows);
-
-            // Column widths
-            ws1['!cols'] = [
-                { wch: 5 },
-                { wch: 14 },
-                { wch: 22 },
-                { wch: 10 },
-                { wch: 12 },
-                { wch: 16 },
-                { wch: 12 },
-                { wch: 16 },
-                { wch: 20 },
-                { wch: 24 },
-            ];
-            ws2['!cols'] = [
-                { wch: 14 },
-                { wch: 20 },
-                { wch: 22 },
-                { wch: 10 },
-                { wch: 28 },
-                { wch: 10 },
-                { wch: 18 },
-                { wch: 18 },
-                { wch: 14 },
-            ];
-
-            XLSX.utils.book_append_sheet(wb, ws1, 'Danh sách phiếu nhập');
-            XLSX.utils.book_append_sheet(wb, ws2, 'Chi tiết sản phẩm');
+            addTableSheet(wb, {
+                name: 'Chi tiết sản phẩm',
+                title: 'Chi tiết sản phẩm nhập kho',
+                subtitle: `${periodText} — ${detailRows.length} dòng`,
+                columns: [
+                    { header: 'Mã phiếu', key: 'code', width: 14 },
+                    { header: 'Ngày giờ nhập', key: 'date', width: 18, type: 'datetime' },
+                    { header: 'Nhà cung cấp', key: 'supplier', width: 24 },
+                    { header: 'Mã SP', key: 'sku', width: 12 },
+                    { header: 'Tên sản phẩm', key: 'name', width: 34 },
+                    { header: 'Số lượng', key: 'quantity', width: 11, type: 'int' },
+                    { header: 'Đơn giá nhập (VNĐ)', key: 'price', width: 18, type: 'money' },
+                    { header: 'Thành tiền (VNĐ)', key: 'total', width: 18, type: 'money' },
+                    { header: 'Trạng thái phiếu', key: 'status', width: 16, type: 'center' },
+                ],
+                rows: detailRows,
+                totals: { label: 'TỔNG CỘNG', keys: ['quantity', 'total'], include: notCancelled },
+            });
 
             const monthStr = `${String(month + 1).padStart(2, '0')}-${year}`;
-            XLSX.writeFile(wb, `Nhap_Kho_Thang_${monthStr}.xlsx`);
+            await downloadWorkbook(wb, `Nhap_Kho_Thang_${monthStr}.xlsx`);
             message.success(`Đã xuất Excel tháng ${month + 1}/${year} (${data.length} phiếu)`);
         } catch (e) {
             message.error('Xuất Excel thất bại');
@@ -291,6 +296,29 @@ const ImportList = () => {
             message.error(error.response?.data?.message || 'Hủy thất bại');
         }
     };
+
+    // Xuất hóa đơn / phiếu nhập: lấy bản đầy đủ (có địa chỉ, SĐT NCC) rồi in hoặc tải Excel
+    const handleInvoice = async (record, mode) => {
+        try {
+            const res = await axiosClient.get(`/imports/${record._id}`);
+            if (mode === 'excel') {
+                await exportInvoiceExcel('import', res.metadata);
+                message.success(`Đã xuất hóa đơn ${record.code}`);
+            } else {
+                printInvoice('import', res.metadata);
+            }
+        } catch (error) {
+            message.error('Xuất hóa đơn thất bại');
+        }
+    };
+
+    const invoiceMenu = (record) => ({
+        items: [
+            { key: 'print', label: 'In / Lưu PDF', icon: <PrinterOutlined /> },
+            { key: 'excel', label: 'Tải file Excel', icon: <DownloadOutlined /> },
+        ],
+        onClick: ({ key }) => handleInvoice(record, key),
+    });
 
     // Xem chi tiết
     const handleView = async (record) => {
@@ -400,7 +428,7 @@ const ImportList = () => {
         {
             title: 'Thao tác',
             key: 'action',
-            width: 140,
+            width: 170,
             align: 'center',
             render: (_, record) => (
                 <Space>
@@ -410,6 +438,11 @@ const ImportList = () => {
                         onClick={() => handleView(record)}
                         style={{ color: '#06B6D4' }}
                     />
+                    <Dropdown menu={invoiceMenu(record)} trigger={['click']}>
+                        <Tooltip title="Xuất hóa đơn">
+                            <Button type="text" icon={<PrinterOutlined />} style={{ color: '#4F46E5' }} />
+                        </Tooltip>
+                    </Dropdown>
                     {record.status === 'pending' && !isStaff && (
                         <>
                             <Popconfirm
@@ -840,6 +873,11 @@ const ImportList = () => {
                                     <Button danger>Hủy phiếu</Button>
                                 </Popconfirm>
                             </>
+                        )}
+                        {selectedImport && (
+                            <Dropdown menu={invoiceMenu(selectedImport)} trigger={['click']}>
+                                <Button icon={<PrinterOutlined />}>Xuất hóa đơn</Button>
+                            </Dropdown>
                         )}
                         <Button onClick={() => setDetailOpen(false)}>Đóng</Button>
                     </Space>
