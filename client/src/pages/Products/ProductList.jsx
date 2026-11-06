@@ -37,6 +37,13 @@ import axiosClient from '../../api/axiosClient';
 import Barcode from 'react-barcode';
 
 const { Option } = Select;
+
+// Ảnh thay thế khi URL ảnh cũ (Cloudinary) không còn tải được
+const IMAGE_FALLBACK =
+    'data:image/svg+xml;utf8,' +
+    encodeURIComponent(
+        '<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44"><rect width="44" height="44" rx="8" fill="#F1F5F9"/><path d="M12 30l7-9 5 6 3-4 5 7z" fill="#CBD5E1"/><circle cx="29" cy="15" r="3" fill="#CBD5E1"/></svg>',
+    );
 const { TextArea } = Input;
 
 const ProductList = () => {
@@ -228,6 +235,7 @@ const ProductList = () => {
                         height={44}
                         style={{ objectFit: 'cover', borderRadius: 8 }}
                         preview={false}
+                        fallback={IMAGE_FALLBACK}
                     />
                 ) : (
                     <div

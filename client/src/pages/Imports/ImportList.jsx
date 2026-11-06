@@ -438,11 +438,11 @@ const ImportList = () => {
                         onClick={() => handleView(record)}
                         style={{ color: '#06B6D4' }}
                     />
-                    <Dropdown menu={invoiceMenu(record)} trigger={['click']}>
-                        <Tooltip title="Xuất hóa đơn">
+                    <Tooltip title="Xuất hóa đơn">
+                        <Dropdown menu={invoiceMenu(record)} trigger={['click']}>
                             <Button type="text" icon={<PrinterOutlined />} style={{ color: '#4F46E5' }} />
-                        </Tooltip>
-                    </Dropdown>
+                        </Dropdown>
+                    </Tooltip>
                     {record.status === 'pending' && !isStaff && (
                         <>
                             <Popconfirm

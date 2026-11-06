@@ -242,23 +242,28 @@ Trong `src/index.css`:
 
 Tạo file `.env` trong thư mục `server/`:
 ```env
-PORT=5000
-MONGODB_URI=mongodb://localhost:27017/warehouse_management
-JWT_SECRET=your_jwt_secret_key_here
-JWT_EXPIRE=7d
+# MongoDB (local hoặc Atlas), tên biến trong code là CONNECT_DB
+CONNECT_DB=mongodb://localhost:27017/ql-kho
+# Origin của client (CORS) và khóa ký token/mã hóa, phải khớp SECRET_CRYPTO ở client
+URL_CLIENT=http://localhost:5173
+SECRET_CRYPTO=your_secret
 
-# Cloudinary
+# Ảnh: mặc định lưu trong MongoDB. Đặt IMAGE_STORAGE=cloudinary để dùng Cloudinary
+# IMAGE_STORAGE=mongo
+# PUBLIC_SERVER_URL=http://localhost:3000
 CLOUDINARY_CLOUD_NAME=your_cloud_name
 CLOUDINARY_API_KEY=your_api_key
 CLOUDINARY_API_SECRET=your_api_secret
 
-# Email (Nodemailer)
-EMAIL_HOST=smtp.gmail.com
-EMAIL_PORT=587
-EMAIL_USER=your_email@gmail.com
-EMAIL_PASS=your_app_password
+# Email (quên mật khẩu)
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=your_email@gmail.com
+SMTP_PASS=your_app_password
+FROM_EMAIL=your_email@gmail.com
 
-# Groq AI
+# AI chatbot
+GEMINI_API_KEY=your_gemini_api_key
 GROQ_API_KEY=your_groq_api_key
 ```
 
@@ -276,7 +281,7 @@ cd client
 npm run dev
 ```
 
-Truy cập: **http://localhost:3000**
+Truy cập client: **http://localhost:5173** (server API chạy ở cổng 3000)
 
 ---
 
@@ -284,19 +289,22 @@ Truy cập: **http://localhost:3000**
 
 | Biến | Mô tả | Bắt buộc |
 |---|---|---|
-| `PORT` | Port cho server (mặc định: 5000) | ✅ |
-| `MONGODB_URI` | Connection string MongoDB | ✅ |
-| `JWT_SECRET` | Secret key cho JWT | ✅ |
-| `JWT_EXPIRE` | Thời gian hết hạn token | ✅ |
-| `CLOUDINARY_CLOUD_NAME` | Cloudinary cloud name | ✅ |
-| `CLOUDINARY_API_KEY` | Cloudinary API key | ✅ |
-| `CLOUDINARY_API_SECRET` | Cloudinary API secret | ✅ |
-| `EMAIL_HOST` | SMTP host | ⚡ |
-| `EMAIL_USER` | Email gửi thông báo | ⚡ |
-| `EMAIL_PASS` | Mật khẩu ứng dụng email | ⚡ |
-| `GROQ_API_KEY` | API key cho AI chatbot | ⚡ |
+| `CONNECT_DB` | Connection string MongoDB | ✅ |
+| `URL_CLIENT` | Origin của client cho CORS | ✅ |
+| `SECRET_CRYPTO` | Khóa ký token và mã hóa thông tin user | ✅ |
+| `IMAGE_STORAGE` | `mongo` (mặc định, ảnh lưu trong MongoDB) hoặc `cloudinary` | ⚡ |
+| `PUBLIC_SERVER_URL` | URL công khai của server, dùng để tạo link ảnh | ⚡ |
+| `CLOUDINARY_*` | Chỉ cần khi `IMAGE_STORAGE=cloudinary` | ⚡ |
+| `SMTP_*`, `FROM_EMAIL` | Gửi email quên mật khẩu | ⚡ |
+| `GEMINI_API_KEY`, `GROQ_API_KEY` | AI chatbot | ⚡ |
 
 > ✅ = Bắt buộc | ⚡ = Cần cho tính năng cụ thể
+
+### Ghi chú vận hành
+
+- **Ảnh:** ảnh upload mới lưu trong collection `images` của MongoDB và được phục vụ qua `/api/upload/image/:id`. Ảnh sản phẩm cũ trỏ tới Cloudinary sẽ không hiện nếu tài khoản Cloudinary đó không còn phát ảnh.
+- **Đăng ký tài khoản:** tài khoản đăng ký mới ở trạng thái chờ duyệt, chỉ đăng nhập được sau khi admin duyệt tại mục Người dùng. Tài khoản cũ (không có trường `isApproved`) coi như đã duyệt.
+- **Xuất Excel và hóa đơn:** dùng chung tiện ích `client/src/utils/excelExport.js`. Hóa đơn từng phiếu có hai dạng: In / Lưu PDF và file Excel.
 
 ---
 
