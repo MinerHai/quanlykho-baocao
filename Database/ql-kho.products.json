@@ -1,0 +1,4391 @@
+[{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7351"
+  },
+  "name": "iPhone 15 128GB",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c730f"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c733f"
+  },
+  "brand": "Apple",
+  "importPrice": 18000000,
+  "salePrice": 22990000,
+  "discountPercent": 0,
+  "quantity": 20,
+  "minStock": 18,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 171,
+  "origin": "Trung Quốc",
+  "warranty": "12 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "ram": "6GB",
+    "storage": "128GB",
+    "screenSize": "6.1 inch",
+    "cpu": "A16 Bionic"
+  },
+  "tags": [],
+  "searchKeywords": "iPhone 15 128GB Apple Trung Quốc 6GB 128GB 6.1 inch A16 Bionic",
+  "viewCount": 0,
+  "soldCount": 49,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.203Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T18:20:50.701Z"
+  },
+  "sku": "SP00002",
+  "slug": "iphone-15-128gb-mn1kaa9n",
+  "__v": 0,
+  "lastImportDate": {
+    "$date": "2026-05-02T18:01:19.811Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7354"
+  },
+  "name": "Samsung Galaxy S24 Ultra 512GB",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c730f"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7348"
+  },
+  "brand": "Samsung",
+  "importPrice": 27000000,
+  "salePrice": 33990000,
+  "discountPercent": 0,
+  "quantity": 30,
+  "minStock": 10,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 232,
+  "origin": "Việt Nam",
+  "warranty": "12 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "ram": "12GB",
+    "storage": "512GB",
+    "screenSize": "6.8 inch",
+    "cpu": "Snapdragon 8 Gen 3"
+  },
+  "tags": [],
+  "searchKeywords": "Samsung Galaxy S24 Ultra 512GB Samsung Việt Nam 12GB 512GB 6.8 inch Snapdragon 8 Gen 3",
+  "viewCount": 0,
+  "soldCount": 150,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.204Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-22T06:01:50.018Z"
+  },
+  "sku": "SP00003",
+  "slug": "samsung-galaxy-s24-ultra-512gb-mn1kaa9o",
+  "__v": 0,
+  "lastImportDate": {
+    "$date": "2026-03-03T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7357"
+  },
+  "name": "Samsung Galaxy A55 5G",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c730f"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c732c"
+  },
+  "brand": "Samsung",
+  "importPrice": 7500000,
+  "salePrice": 9990000,
+  "discountPercent": 0,
+  "quantity": 12,
+  "minStock": 20,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 213,
+  "origin": "Việt Nam",
+  "warranty": "12 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "ram": "8GB",
+    "storage": "128GB",
+    "screenSize": "6.6 inch"
+  },
+  "tags": [],
+  "searchKeywords": "Samsung Galaxy A55 5G Samsung Việt Nam 8GB 128GB 6.6 inch",
+  "viewCount": 0,
+  "soldCount": 4,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.205Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-22T05:58:34.641Z"
+  },
+  "sku": "SP00004",
+  "slug": "samsung-galaxy-a55-5g-mn1kaa9q",
+  "__v": 0,
+  "lastImportDate": {
+    "$date": "2026-03-03T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c735a"
+  },
+  "name": "Xiaomi 14 Ultra",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c730f"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7326"
+  },
+  "brand": "Xiaomi",
+  "importPrice": 20000000,
+  "salePrice": 24990000,
+  "discountPercent": 0,
+  "quantity": 51,
+  "minStock": 9,
+  "unit": "Chiếc",
+  "thumbnail": "https://res.cloudinary.com/djh1ruskj/image/upload/v1775317724/ql-kho/products/qwgzjxxx1lbqjk7qxkjo.png",
+  "images": [
+    "https://res.cloudinary.com/djh1ruskj/image/upload/v1775317724/ql-kho/products/qwgzjxxx1lbqjk7qxkjo.png"
+  ],
+  "weight": 220,
+  "origin": "Trung Quốc",
+  "warranty": "18 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "ram": "16GB",
+    "storage": "512GB",
+    "screenSize": "6.73 inch",
+    "camera": "Leica 50MP"
+  },
+  "tags": [],
+  "searchKeywords": "Xiaomi 14 Ultra Xiaomi Trung Quốc 16GB 512GB 6.73 inch Leica 50MP",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.206Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-22T05:58:34.645Z"
+  },
+  "sku": "SP00005",
+  "slug": "xiaomi-14-ultra-mn1kaa9r",
+  "__v": 1,
+  "lastImportDate": {
+    "$date": "2026-03-03T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c735d"
+  },
+  "name": "Xiaomi Redmi Note 13 Pro",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c730f"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c733a"
+  },
+  "brand": "Xiaomi",
+  "importPrice": 5500000,
+  "salePrice": 7490000,
+  "discountPercent": 0,
+  "quantity": 180,
+  "minStock": 9,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 187,
+  "origin": "Trung Quốc",
+  "warranty": "18 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "ram": "8GB",
+    "storage": "128GB",
+    "screenSize": "6.67 inch"
+  },
+  "tags": [],
+  "searchKeywords": "Xiaomi Redmi Note 13 Pro Xiaomi Trung Quốc 8GB 128GB 6.67 inch",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.207Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-22T05:58:34.648Z"
+  },
+  "sku": "SP00006",
+  "slug": "xiaomi-redmi-note-13-pro-mn1kaa9r",
+  "__v": 0,
+  "lastImportDate": {
+    "$date": "2026-03-03T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7360"
+  },
+  "name": "OPPO Find X7 Ultra",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c730f"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c733f"
+  },
+  "brand": "OPPO",
+  "importPrice": 19000000,
+  "salePrice": 23990000,
+  "discountPercent": 0,
+  "quantity": 77,
+  "minStock": 20,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 221,
+  "origin": "Trung Quốc",
+  "warranty": "12 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "ram": "16GB",
+    "storage": "256GB"
+  },
+  "tags": [],
+  "searchKeywords": "OPPO Find X7 Ultra OPPO Trung Quốc 16GB 256GB",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.208Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-22T05:58:34.651Z"
+  },
+  "sku": "SP00007",
+  "slug": "oppo-find-x7-ultra-mn1kaa9s",
+  "__v": 0,
+  "lastImportDate": {
+    "$date": "2026-03-03T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7363"
+  },
+  "name": "OPPO Reno 11 5G",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c730f"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c733a"
+  },
+  "brand": "OPPO",
+  "importPrice": 8000000,
+  "salePrice": 10990000,
+  "discountPercent": 0,
+  "quantity": 69,
+  "minStock": 10,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 184,
+  "origin": "Trung Quốc",
+  "warranty": "12 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "ram": "12GB",
+    "storage": "256GB"
+  },
+  "tags": [],
+  "searchKeywords": "OPPO Reno 11 5G OPPO Trung Quốc 12GB 256GB",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.209Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-22T05:58:34.748Z"
+  },
+  "sku": "SP00008",
+  "slug": "oppo-reno-11-5g-mn1kaa9t",
+  "__v": 0,
+  "lastImportDate": {
+    "$date": "2026-03-03T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7366"
+  },
+  "name": "Samsung Galaxy Z Fold 5",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c730f"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c733f"
+  },
+  "brand": "Samsung",
+  "importPrice": 32000000,
+  "salePrice": 40990000,
+  "discountPercent": 0,
+  "quantity": 48,
+  "minStock": 13,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 253,
+  "origin": "Việt Nam",
+  "warranty": "12 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "ram": "12GB",
+    "storage": "256GB",
+    "screenSize": "7.6 inch",
+    "type": "Gập"
+  },
+  "tags": [],
+  "searchKeywords": "Samsung Galaxy Z Fold 5 Samsung Việt Nam 12GB 256GB 7.6 inch Gập",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.210Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-22T05:58:34.754Z"
+  },
+  "sku": "SP00009",
+  "slug": "samsung-galaxy-z-fold-5-mn1kaa9u",
+  "__v": 0,
+  "lastImportDate": {
+    "$date": "2026-03-03T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7369"
+  },
+  "name": "iPhone 14 128GB",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c730f"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7326"
+  },
+  "brand": "Apple",
+  "importPrice": 14000000,
+  "salePrice": 17990000,
+  "discountPercent": 0,
+  "quantity": 30,
+  "minStock": 13,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 172,
+  "origin": "Trung Quốc",
+  "warranty": "12 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "tags": [],
+  "searchKeywords": "iPhone 14 128GB Apple Trung Quốc",
+  "viewCount": 0,
+  "soldCount": 120,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.211Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T18:19:48.339Z"
+  },
+  "sku": "SP00010",
+  "slug": "iphone-14-128gb-mn1kaa9v",
+  "__v": 0,
+  "lastImportDate": {
+    "$date": "2026-02-02T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c736c"
+  },
+  "name": "Realme GT 5 Pro",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c730f"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c733a"
+  },
+  "brand": "Realme",
+  "importPrice": 10000000,
+  "salePrice": 13490000,
+  "discountPercent": 0,
+  "quantity": 14,
+  "minStock": 20,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 199,
+  "origin": "Trung Quốc",
+  "warranty": "12 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "ram": "12GB",
+    "storage": "256GB",
+    "cpu": "Snapdragon 8 Gen 3"
+  },
+  "tags": [],
+  "searchKeywords": "Realme GT 5 Pro Realme Trung Quốc 12GB 256GB Snapdragon 8 Gen 3",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.212Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-22T05:58:34.732Z"
+  },
+  "sku": "SP00011",
+  "slug": "realme-gt-5-pro-mn1kaa9w",
+  "__v": 0,
+  "lastImportDate": {
+    "$date": "2026-03-03T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c736f"
+  },
+  "name": "Vivo V30 5G",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c730f"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c734b"
+  },
+  "brand": "Vivo",
+  "importPrice": 7000000,
+  "salePrice": 9990000,
+  "discountPercent": 0,
+  "quantity": 126,
+  "minStock": 19,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 186,
+  "origin": "Trung Quốc",
+  "warranty": "12 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "ram": "12GB",
+    "storage": "256GB"
+  },
+  "tags": [],
+  "searchKeywords": "Vivo V30 5G Vivo Trung Quốc 12GB 256GB",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.213Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-22T05:58:34.759Z"
+  },
+  "sku": "SP00012",
+  "slug": "vivo-v30-5g-mn1kaa9x",
+  "__v": 0,
+  "lastImportDate": {
+    "$date": "2026-03-03T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7372"
+  },
+  "name": "MacBook Air M3 15 inch",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7310"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7335"
+  },
+  "brand": "Apple",
+  "importPrice": 28000000,
+  "salePrice": 34990000,
+  "discountPercent": 0,
+  "quantity": 2,
+  "minStock": 18,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 1510,
+  "origin": "Trung Quốc",
+  "warranty": "12 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "ram": "8GB",
+    "storage": "256GB SSD",
+    "cpu": "Apple M3",
+    "screenSize": "15.3 inch"
+  },
+  "tags": [],
+  "searchKeywords": "MacBook Air M3 15 inch Apple Trung Quốc 8GB 256GB SSD Apple M3 15.3 inch",
+  "viewCount": 0,
+  "soldCount": 165,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.214Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T18:22:36.018Z"
+  },
+  "sku": "SP00013",
+  "slug": "macbook-air-m3-15-inch-mn1kaa9y",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7375"
+  },
+  "name": "MacBook Pro M3 Pro 14 inch",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7310"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7326"
+  },
+  "brand": "Apple",
+  "importPrice": 40000000,
+  "salePrice": 49990000,
+  "discountPercent": 0,
+  "quantity": 20,
+  "minStock": 11,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 1610,
+  "origin": "Trung Quốc",
+  "warranty": "12 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "tags": [],
+  "searchKeywords": "MacBook Pro M3 Pro 14 inch Apple Trung Quốc",
+  "viewCount": 0,
+  "soldCount": 30,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.215Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T18:28:40.796Z"
+  },
+  "sku": "SP00014",
+  "slug": "macbook-pro-m3-pro-14-inch-mn1kaa9z",
+  "__v": 0,
+  "lastImportDate": {
+    "$date": "2026-04-30T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7378"
+  },
+  "name": "Dell XPS 16 9640",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7310"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c733a"
+  },
+  "brand": "Dell",
+  "importPrice": 35000000,
+  "salePrice": 42990000,
+  "discountPercent": 0,
+  "quantity": 35,
+  "minStock": 16,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 2100,
+  "origin": "Trung Quốc",
+  "warranty": "12 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "ram": "32GB",
+    "storage": "1TB SSD",
+    "cpu": "Intel Core Ultra 9"
+  },
+  "tags": [],
+  "searchKeywords": "Dell XPS 16 9640 Dell Trung Quốc 32GB 1TB SSD Intel Core Ultra 9",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.215Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.215Z"
+  },
+  "sku": "SP00015",
+  "slug": "dell-xps-16-9640-mn1kaaa0",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c737b"
+  },
+  "name": "ASUS ROG Strix G16",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7310"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7321"
+  },
+  "brand": "ASUS",
+  "importPrice": 30000000,
+  "salePrice": 37990000,
+  "discountPercent": 0,
+  "quantity": 186,
+  "minStock": 16,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 2500,
+  "origin": "Trung Quốc",
+  "warranty": "24 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "ram": "16GB",
+    "storage": "512GB SSD",
+    "cpu": "Intel i9-14900HX",
+    "gpu": "RTX 4070"
+  },
+  "tags": [],
+  "searchKeywords": "ASUS ROG Strix G16 ASUS Trung Quốc 16GB 512GB SSD Intel i9-14900HX RTX 4070",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.217Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.217Z"
+  },
+  "sku": "SP00016",
+  "slug": "asus-rog-strix-g16-mn1kaaa1",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c737e"
+  },
+  "name": "Lenovo ThinkPad X1 Carbon Gen 12",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7310"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7344"
+  },
+  "brand": "Lenovo",
+  "importPrice": 32000000,
+  "salePrice": 39990000,
+  "discountPercent": 0,
+  "quantity": 81,
+  "minStock": 12,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 1240,
+  "origin": "Trung Quốc",
+  "warranty": "36 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "ram": "32GB",
+    "storage": "1TB SSD",
+    "cpu": "Intel Core Ultra 7"
+  },
+  "tags": [],
+  "searchKeywords": "Lenovo ThinkPad X1 Carbon Gen 12 Lenovo Trung Quốc 32GB 1TB SSD Intel Core Ultra 7",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.217Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.217Z"
+  },
+  "sku": "SP00017",
+  "slug": "lenovo-thinkpad-x1-carbon-gen-12-mn1kaaa2",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7381"
+  },
+  "name": "HP Pavilion 15",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7310"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7321"
+  },
+  "brand": "HP",
+  "importPrice": 12000000,
+  "salePrice": 15990000,
+  "discountPercent": 0,
+  "quantity": 165,
+  "minStock": 17,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 1750,
+  "origin": "Trung Quốc",
+  "warranty": "12 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "ram": "8GB",
+    "storage": "512GB SSD",
+    "cpu": "Intel Core i5-1340P"
+  },
+  "tags": [],
+  "searchKeywords": "HP Pavilion 15 HP Trung Quốc 8GB 512GB SSD Intel Core i5-1340P",
+  "viewCount": 1,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.218Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-04T15:45:26.716Z"
+  },
+  "sku": "SP00018",
+  "slug": "hp-pavilion-15-mn1kaaa2",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7384"
+  },
+  "name": "AirPods Pro 2 USB-C",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7311"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c733f"
+  },
+  "brand": "Apple",
+  "importPrice": 4500000,
+  "salePrice": 6190000,
+  "discountPercent": 0,
+  "quantity": 102,
+  "minStock": 15,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 50,
+  "origin": "Trung Quốc",
+  "warranty": "12 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "type": "True Wireless",
+    "anc": "Có",
+    "battery": "6 giờ"
+  },
+  "tags": [],
+  "searchKeywords": "AirPods Pro 2 USB-C Apple Trung Quốc True Wireless Có 6 giờ",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.219Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.219Z"
+  },
+  "sku": "SP00019",
+  "slug": "airpods-pro-2-usb-c-mn1kaaa4",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c738a"
+  },
+  "name": "Logitech MX Master 3S",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7311"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7348"
+  },
+  "brand": "Logitech",
+  "importPrice": 1800000,
+  "salePrice": 2490000,
+  "discountPercent": 0,
+  "quantity": 99,
+  "minStock": 15,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 141,
+  "origin": "Trung Quốc",
+  "warranty": "24 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "type": "Chuột không dây",
+    "sensor": "8000 DPI"
+  },
+  "tags": [],
+  "searchKeywords": "Logitech MX Master 3S Logitech Trung Quốc Chuột không dây 8000 DPI",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.222Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-22T05:58:34.736Z"
+  },
+  "sku": "SP00021",
+  "slug": "logitech-mx-master-3s-mn1kaaa7",
+  "__v": 0,
+  "lastImportDate": {
+    "$date": "2026-03-03T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7390"
+  },
+  "name": "Anker Nano 65W GaN",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7311"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7335"
+  },
+  "brand": "Anker",
+  "importPrice": 500000,
+  "salePrice": 790000,
+  "discountPercent": 0,
+  "quantity": 109,
+  "minStock": 8,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 112,
+  "origin": "Trung Quốc",
+  "warranty": "18 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "type": "Sạc nhanh",
+    "output": "65W",
+    "ports": "USB-C x2"
+  },
+  "tags": [],
+  "searchKeywords": "Anker Nano 65W GaN Anker Trung Quốc Sạc nhanh 65W USB-C x2",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.225Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.225Z"
+  },
+  "sku": "SP00023",
+  "slug": "anker-nano-65w-gan-mn1kaaa9",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7396"
+  },
+  "name": "Ốp lưng MagSafe iPhone 15 Pro Max",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7311"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7335"
+  },
+  "brand": "Apple",
+  "importPrice": 800000,
+  "salePrice": 1290000,
+  "discountPercent": 0,
+  "quantity": 31,
+  "minStock": 10,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 28,
+  "origin": "Trung Quốc",
+  "warranty": "6 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "material": "Silicone",
+    "magsafe": "Có"
+  },
+  "tags": [],
+  "searchKeywords": "Ốp lưng MagSafe iPhone 15 Pro Max Apple Trung Quốc Silicone Có",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.227Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.227Z"
+  },
+  "sku": "SP00025",
+  "slug": "op-lung-magsafe-iphone-15-pro-max-mn1kaaab",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7399"
+  },
+  "name": "Pin dự phòng Anker 20000mAh",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7311"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7344"
+  },
+  "brand": "Anker",
+  "importPrice": 600000,
+  "salePrice": 990000,
+  "discountPercent": 0,
+  "quantity": 30,
+  "minStock": 14,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 340,
+  "origin": "Trung Quốc",
+  "warranty": "18 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "capacity": "20000mAh",
+    "output": "22.5W"
+  },
+  "tags": [],
+  "searchKeywords": "Pin dự phòng Anker 20000mAh Anker Trung Quốc 20000mAh 22.5W",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.228Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-18T05:38:21.066Z"
+  },
+  "sku": "SP00026",
+  "slug": "pin-du-phong-anker-20000mah-mn1kaaac",
+  "__v": 0,
+  "lastImportDate": {
+    "$date": "2026-04-17T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c739c"
+  },
+  "name": "Nike Air Max 90",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7312"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c734b"
+  },
+  "brand": "Nike",
+  "importPrice": 2200000,
+  "salePrice": 3290000,
+  "discountPercent": 0,
+  "quantity": 212,
+  "minStock": 7,
+  "unit": "Đôi",
+  "thumbnail": "",
+  "images": [],
+  "weight": 340,
+  "origin": "Việt Nam",
+  "warranty": "6 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "material": "Da tổng hợp + Mesh",
+    "sole": "Air Max",
+    "gender": "Unisex"
+  },
+  "tags": [],
+  "searchKeywords": "Nike Air Max 90 Nike Việt Nam Da tổng hợp + Mesh Air Max Unisex",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.229Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-21T07:08:10.092Z"
+  },
+  "sku": "SP00027",
+  "slug": "nike-air-max-90-mn1kaaad",
+  "__v": 0,
+  "lastImportDate": {
+    "$date": "2026-04-20T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c739f"
+  },
+  "name": "Nike Air Force 1 Low White",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7312"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c732c"
+  },
+  "brand": "Nike",
+  "importPrice": 1800000,
+  "salePrice": 2690000,
+  "discountPercent": 0,
+  "quantity": 13,
+  "minStock": 12,
+  "unit": "Đôi",
+  "thumbnail": "",
+  "images": [],
+  "weight": 360,
+  "origin": "Việt Nam",
+  "warranty": "6 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "material": "Da thật",
+    "sole": "Cao su",
+    "gender": "Unisex",
+    "color": "Trắng"
+  },
+  "tags": [],
+  "searchKeywords": "Nike Air Force 1 Low White Nike Việt Nam Da thật Cao su Unisex Trắng",
+  "viewCount": 0,
+  "soldCount": 60,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.230Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-21T07:09:30.350Z"
+  },
+  "sku": "SP00028",
+  "slug": "nike-air-force-1-low-white-mn1kaaaf",
+  "__v": 0,
+  "lastImportDate": {
+    "$date": "2026-04-20T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c73a2"
+  },
+  "name": "Adidas Ultra Boost Light",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7312"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7331"
+  },
+  "brand": "Adidas",
+  "importPrice": 2800000,
+  "salePrice": 3990000,
+  "discountPercent": 0,
+  "quantity": 65,
+  "minStock": 14,
+  "unit": "Đôi",
+  "thumbnail": "",
+  "images": [],
+  "weight": 290,
+  "origin": "Trung Quốc",
+  "warranty": "6 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "material": "Primeknit",
+    "sole": "Boost",
+    "gender": "Nam",
+    "type": "Chạy bộ"
+  },
+  "tags": [],
+  "searchKeywords": "Adidas Ultra Boost Light Adidas Trung Quốc Primeknit Boost Nam Chạy bộ",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.232Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.232Z"
+  },
+  "sku": "SP00029",
+  "slug": "adidas-ultra-boost-light-mn1kaaag",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c73a5"
+  },
+  "name": "Adidas Stan Smith",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7312"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7348"
+  },
+  "brand": "Adidas",
+  "importPrice": 1500000,
+  "salePrice": 2290000,
+  "discountPercent": 0,
+  "quantity": 61,
+  "minStock": 18,
+  "unit": "Đôi",
+  "thumbnail": "",
+  "images": [],
+  "weight": 310,
+  "origin": "Việt Nam",
+  "warranty": "6 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "material": "Da tổng hợp",
+    "gender": "Unisex",
+    "color": "Trắng/Xanh"
+  },
+  "tags": [],
+  "searchKeywords": "Adidas Stan Smith Adidas Việt Nam Da tổng hợp Unisex Trắng/Xanh",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.233Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T20:54:41.270Z"
+  },
+  "sku": "SP00030",
+  "slug": "adidas-stan-smith-mn1kaaai",
+  "__v": 0,
+  "lastImportDate": {
+    "$date": "2026-03-12T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c73a8"
+  },
+  "name": "Nike Pegasus 41",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7312"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7321"
+  },
+  "brand": "Nike",
+  "importPrice": 2000000,
+  "salePrice": 3090000,
+  "discountPercent": 0,
+  "quantity": 198,
+  "minStock": 15,
+  "unit": "Đôi",
+  "thumbnail": "",
+  "images": [],
+  "weight": 275,
+  "origin": "Trung Quốc",
+  "warranty": "6 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "type": "Chạy bộ",
+    "cushion": "React Foam",
+    "gender": "Nam"
+  },
+  "tags": [],
+  "searchKeywords": "Nike Pegasus 41 Nike Trung Quốc Chạy bộ React Foam Nam",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.235Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-21T07:08:10.095Z"
+  },
+  "sku": "SP00031",
+  "slug": "nike-pegasus-41-mn1kaaaj",
+  "__v": 0,
+  "lastImportDate": {
+    "$date": "2026-04-20T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c73ab"
+  },
+  "name": "New Balance 574",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7312"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7331"
+  },
+  "brand": "New Balance",
+  "importPrice": 1600000,
+  "salePrice": 2390000,
+  "discountPercent": 0,
+  "quantity": 52,
+  "minStock": 5,
+  "unit": "Đôi",
+  "thumbnail": "",
+  "images": [],
+  "weight": 330,
+  "origin": "Trung Quốc",
+  "warranty": "6 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "material": "Suede + Mesh",
+    "gender": "Unisex"
+  },
+  "tags": [],
+  "searchKeywords": "New Balance 574 New Balance Trung Quốc Suede + Mesh Unisex",
+  "viewCount": 0,
+  "soldCount": 70,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.236Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T18:08:53.652Z"
+  },
+  "sku": "SP00032",
+  "slug": "new-balance-574-mn1kaaak",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c73ae"
+  },
+  "name": "Converse Chuck Taylor All Star",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7312"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7321"
+  },
+  "brand": "Converse",
+  "importPrice": 800000,
+  "salePrice": 1390000,
+  "discountPercent": 0,
+  "quantity": 190,
+  "minStock": 5,
+  "unit": "Đôi",
+  "thumbnail": "",
+  "images": [],
+  "weight": 400,
+  "origin": "Việt Nam",
+  "warranty": "3 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "material": "Canvas",
+    "sole": "Cao su",
+    "gender": "Unisex"
+  },
+  "tags": [],
+  "searchKeywords": "Converse Chuck Taylor All Star Converse Việt Nam Canvas Cao su Unisex",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.237Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.237Z"
+  },
+  "sku": "SP00033",
+  "slug": "converse-chuck-taylor-all-star-mn1kaaal",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c73b1"
+  },
+  "name": "Puma RS-X Reinvention",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7312"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7326"
+  },
+  "brand": "Puma",
+  "importPrice": 1800000,
+  "salePrice": 2590000,
+  "discountPercent": 0,
+  "quantity": 85,
+  "minStock": 13,
+  "unit": "Đôi",
+  "thumbnail": "",
+  "images": [],
+  "weight": 350,
+  "origin": "Trung Quốc",
+  "warranty": "6 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "material": "Mesh + Da tổng hợp",
+    "gender": "Nam"
+  },
+  "tags": [],
+  "searchKeywords": "Puma RS-X Reinvention Puma Trung Quốc Mesh + Da tổng hợp Nam",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.238Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-22T05:58:34.722Z"
+  },
+  "sku": "SP00034",
+  "slug": "puma-rs-x-reinvention-mn1kaaam",
+  "__v": 0,
+  "lastImportDate": {
+    "$date": "2026-03-03T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c73b4"
+  },
+  "name": "Nike Dunk Low Retro",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7312"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c733a"
+  },
+  "brand": "Nike",
+  "importPrice": 2000000,
+  "salePrice": 2890000,
+  "discountPercent": 0,
+  "quantity": 81,
+  "minStock": 9,
+  "unit": "Đôi",
+  "thumbnail": "",
+  "images": [],
+  "weight": 360,
+  "origin": "Trung Quốc",
+  "warranty": "6 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "material": "Da thật",
+    "gender": "Unisex"
+  },
+  "tags": [],
+  "searchKeywords": "Nike Dunk Low Retro Nike Trung Quốc Da thật Unisex",
+  "viewCount": 0,
+  "soldCount": 100,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.239Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-21T07:08:10.087Z"
+  },
+  "sku": "SP00035",
+  "slug": "nike-dunk-low-retro-mn1kaaan",
+  "__v": 0,
+  "lastImportDate": {
+    "$date": "2026-04-20T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c73b7"
+  },
+  "name": "Adidas Samba OG",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7312"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7348"
+  },
+  "brand": "Adidas",
+  "importPrice": 1700000,
+  "salePrice": 2490000,
+  "discountPercent": 0,
+  "quantity": 66,
+  "minStock": 14,
+  "unit": "Đôi",
+  "thumbnail": "",
+  "images": [],
+  "weight": 320,
+  "origin": "Việt Nam",
+  "warranty": "6 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "material": "Da thật + Suede",
+    "gender": "Unisex"
+  },
+  "tags": [],
+  "searchKeywords": "Adidas Samba OG Adidas Việt Nam Da thật + Suede Unisex",
+  "viewCount": 0,
+  "soldCount": 20,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.239Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T20:54:41.262Z"
+  },
+  "sku": "SP00036",
+  "slug": "adidas-samba-og-mn1kaaao",
+  "__v": 0,
+  "lastImportDate": {
+    "$date": "2026-03-12T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c73c3"
+  },
+  "name": "Giày Derby da nâu công sở",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7313"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7321"
+  },
+  "brand": "Pierre Cardin",
+  "importPrice": 1000000,
+  "salePrice": 1590000,
+  "discountPercent": 0,
+  "quantity": 165,
+  "minStock": 19,
+  "unit": "Đôi",
+  "thumbnail": "",
+  "images": [],
+  "weight": 430,
+  "origin": "Việt Nam",
+  "warranty": "6 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "material": "Da bò thật",
+    "color": "Nâu",
+    "gender": "Nam"
+  },
+  "tags": [],
+  "searchKeywords": "Giày Derby da nâu công sở Pierre Cardin Việt Nam Da bò thật Nâu Nam",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.243Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.243Z"
+  },
+  "sku": "SP00040",
+  "slug": "giay-derby-da-nau-cong-so-mn1kaaar",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c73c6"
+  },
+  "name": "Dép Nike Benassi JDI",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7314"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c734b"
+  },
+  "brand": "Nike",
+  "importPrice": 400000,
+  "salePrice": 690000,
+  "discountPercent": 0,
+  "quantity": 96,
+  "minStock": 13,
+  "unit": "Đôi",
+  "thumbnail": "",
+  "images": [],
+  "weight": 180,
+  "origin": "Trung Quốc",
+  "warranty": "3 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "material": "EVA",
+    "gender": "Unisex"
+  },
+  "tags": [],
+  "searchKeywords": "Dép Nike Benassi JDI Nike Trung Quốc EVA Unisex",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.244Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-21T07:08:10.082Z"
+  },
+  "sku": "SP00041",
+  "slug": "dep-nike-benassi-jdi-mn1kaaat",
+  "__v": 0,
+  "lastImportDate": {
+    "$date": "2026-04-20T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c73c9"
+  },
+  "name": "Sandal Adidas Adilette",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7314"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c734b"
+  },
+  "brand": "Adidas",
+  "importPrice": 500000,
+  "salePrice": 790000,
+  "discountPercent": 0,
+  "quantity": 131,
+  "minStock": 11,
+  "unit": "Đôi",
+  "thumbnail": "",
+  "images": [],
+  "weight": 190,
+  "origin": "Trung Quốc",
+  "warranty": "3 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "material": "Cao su",
+    "gender": "Unisex"
+  },
+  "tags": [],
+  "searchKeywords": "Sandal Adidas Adilette Adidas Trung Quốc Cao su Unisex",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.245Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.245Z"
+  },
+  "sku": "SP00042",
+  "slug": "sandal-adidas-adilette-mn1kaaau",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c73cc"
+  },
+  "name": "Dép xỏ ngón Havaianas Brasil",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7314"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c734b"
+  },
+  "brand": "Havaianas",
+  "importPrice": 250000,
+  "salePrice": 450000,
+  "discountPercent": 0,
+  "quantity": 192,
+  "minStock": 13,
+  "unit": "Đôi",
+  "thumbnail": "",
+  "images": [],
+  "weight": 120,
+  "origin": "Brazil",
+  "warranty": "3 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "material": "Cao su tự nhiên",
+    "gender": "Unisex"
+  },
+  "tags": [],
+  "searchKeywords": "Dép xỏ ngón Havaianas Brasil Havaianas Brazil Cao su tự nhiên Unisex",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.246Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T11:10:42.331Z"
+  },
+  "sku": "SP00043",
+  "slug": "dep-xo-ngon-havaianas-brasil-mn1kaaav",
+  "__v": 0,
+  "lastImportDate": {
+    "$date": "2026-03-09T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c73cf"
+  },
+  "name": "Sandal quai hậu Shondo",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7314"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7331"
+  },
+  "brand": "Shondo",
+  "importPrice": 350000,
+  "salePrice": 599000,
+  "discountPercent": 0,
+  "quantity": 139,
+  "minStock": 17,
+  "unit": "Đôi",
+  "thumbnail": "",
+  "images": [],
+  "weight": 200,
+  "origin": "Việt Nam",
+  "warranty": "6 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "material": "EVA + Vải",
+    "gender": "Unisex"
+  },
+  "tags": [],
+  "searchKeywords": "Sandal quai hậu Shondo Shondo Việt Nam EVA + Vải Unisex",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.247Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.247Z"
+  },
+  "sku": "SP00044",
+  "slug": "sandal-quai-hau-shondo-mn1kaaav",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c73d2"
+  },
+  "name": "Áo thun Cotton nam cổ tròn",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7315"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7344"
+  },
+  "brand": "Uniqlo",
+  "importPrice": 150000,
+  "salePrice": 299000,
+  "discountPercent": 0,
+  "quantity": 102,
+  "minStock": 6,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 180,
+  "origin": "Việt Nam",
+  "warranty": "",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "fabric": "Cotton 100%",
+    "gender": "Nam",
+    "season": "4 mùa"
+  },
+  "tags": [],
+  "searchKeywords": "Áo thun Cotton nam cổ tròn Uniqlo Việt Nam Cotton 100% Nam 4 mùa",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.248Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.248Z"
+  },
+  "sku": "SP00045",
+  "slug": "ao-thun-cotton-nam-co-tron-mn1kaaaw",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c73d5"
+  },
+  "name": "Áo Polo Pique Classic Fit",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7315"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7344"
+  },
+  "brand": "Lacoste",
+  "importPrice": 1200000,
+  "salePrice": 1890000,
+  "discountPercent": 0,
+  "quantity": 191,
+  "minStock": 19,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 200,
+  "origin": "Peru",
+  "warranty": "",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "fabric": "Cotton Pique",
+    "gender": "Nam"
+  },
+  "tags": [],
+  "searchKeywords": "Áo Polo Pique Classic Fit Lacoste Peru Cotton Pique Nam",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.249Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-21T07:14:04.704Z"
+  },
+  "sku": "SP00046",
+  "slug": "ao-polo-pique-classic-fit-mn1kaaax",
+  "__v": 0,
+  "lastImportDate": {
+    "$date": "2026-03-10T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c73d8"
+  },
+  "name": "Áo sơ mi Oxford dài tay",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7315"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c733f"
+  },
+  "brand": "Routine",
+  "importPrice": 250000,
+  "salePrice": 450000,
+  "discountPercent": 0,
+  "quantity": 21,
+  "minStock": 15,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 220,
+  "origin": "Việt Nam",
+  "warranty": "",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "fabric": "Cotton Oxford",
+    "gender": "Nam",
+    "sleeve": "Dài tay"
+  },
+  "tags": [],
+  "searchKeywords": "Áo sơ mi Oxford dài tay Routine Việt Nam Cotton Oxford Nam Dài tay",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.250Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.250Z"
+  },
+  "sku": "SP00047",
+  "slug": "ao-so-mi-oxford-dai-tay-mn1kaaay",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c73db"
+  },
+  "name": "Áo khoác hoodie basic",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7315"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7344"
+  },
+  "brand": "H&M",
+  "importPrice": 350000,
+  "salePrice": 599000,
+  "discountPercent": 0,
+  "quantity": 29,
+  "minStock": 8,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 450,
+  "origin": "Bangladesh",
+  "warranty": "",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "fabric": "Cotton Blend",
+    "gender": "Nam",
+    "type": "Hoodie"
+  },
+  "tags": [],
+  "searchKeywords": "Áo khoác hoodie basic H&M Bangladesh Cotton Blend Nam Hoodie",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.250Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-22T05:58:34.717Z"
+  },
+  "sku": "SP00048",
+  "slug": "ao-khoac-hoodie-basic-mn1kaaaz",
+  "__v": 0,
+  "lastImportDate": {
+    "$date": "2026-03-03T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c73de"
+  },
+  "name": "Áo thun thể thao Dri-FIT",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7315"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c733a"
+  },
+  "brand": "Nike",
+  "importPrice": 500000,
+  "salePrice": 790000,
+  "discountPercent": 0,
+  "quantity": 170,
+  "minStock": 12,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 140,
+  "origin": "Việt Nam",
+  "warranty": "",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "fabric": "Polyester Dri-FIT",
+    "gender": "Nam",
+    "type": "Thể thao"
+  },
+  "tags": [],
+  "searchKeywords": "Áo thun thể thao Dri-FIT Nike Việt Nam Polyester Dri-FIT Nam Thể thao",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.251Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T18:02:22.261Z"
+  },
+  "sku": "SP00049",
+  "slug": "ao-thun-the-thao-dri-fit-mn1kaaaz",
+  "__v": 0,
+  "lastImportDate": {
+    "$date": "2026-04-30T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c73e1"
+  },
+  "name": "Áo blazer nam một hàng nút",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7315"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7331"
+  },
+  "brand": "Zara",
+  "importPrice": 800000,
+  "salePrice": 1490000,
+  "discountPercent": 0,
+  "quantity": 199,
+  "minStock": 14,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 500,
+  "origin": "Maroc",
+  "warranty": "",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "fabric": "Polyester Blend",
+    "gender": "Nam",
+    "type": "Blazer"
+  },
+  "tags": [],
+  "searchKeywords": "Áo blazer nam một hàng nút Zara Maroc Polyester Blend Nam Blazer",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.252Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-22T05:58:34.707Z"
+  },
+  "sku": "SP00050",
+  "slug": "ao-blazer-nam-mot-hang-nut-mn1kaab0",
+  "__v": 0,
+  "lastImportDate": {
+    "$date": "2026-03-03T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c73e4"
+  },
+  "name": "Áo vest công sở Slim Fit",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7315"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c733f"
+  },
+  "brand": "Aristino",
+  "importPrice": 600000,
+  "salePrice": 990000,
+  "discountPercent": 0,
+  "quantity": 125,
+  "minStock": 13,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 400,
+  "origin": "Việt Nam",
+  "warranty": "",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "fabric": "Polyester + Wool",
+    "gender": "Nam"
+  },
+  "tags": [],
+  "searchKeywords": "Áo vest công sở Slim Fit Aristino Việt Nam Polyester + Wool Nam",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.252Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.252Z"
+  },
+  "sku": "SP00051",
+  "slug": "ao-vest-cong-so-slim-fit-mn1kaab1",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c73e7"
+  },
+  "name": "Áo thun oversize Streetwear",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7315"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7331"
+  },
+  "brand": "Local Brand",
+  "importPrice": 200000,
+  "salePrice": 390000,
+  "discountPercent": 0,
+  "quantity": 121,
+  "minStock": 18,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 250,
+  "origin": "Việt Nam",
+  "warranty": "",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "fabric": "Cotton 95% Spandex 5%",
+    "gender": "Unisex",
+    "fit": "Oversize"
+  },
+  "tags": [],
+  "searchKeywords": "Áo thun oversize Streetwear Local Brand Việt Nam Cotton 95% Spandex 5% Unisex Oversize",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.253Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.253Z"
+  },
+  "sku": "SP00052",
+  "slug": "ao-thun-oversize-streetwear-mn1kaab2",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c73ea"
+  },
+  "name": "Áo kiểu nữ cổ V xếp ly",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7316"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c734b"
+  },
+  "brand": "Zara",
+  "importPrice": 400000,
+  "salePrice": 790000,
+  "discountPercent": 0,
+  "quantity": 64,
+  "minStock": 18,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 150,
+  "origin": "Thổ Nhĩ Kỳ",
+  "warranty": "",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "fabric": "Polyester",
+    "gender": "Nữ"
+  },
+  "tags": [],
+  "searchKeywords": "Áo kiểu nữ cổ V xếp ly Zara Thổ Nhĩ Kỳ Polyester Nữ",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.254Z"
+  },
+  "sku": "SP00053",
+  "slug": "ao-kieu-nu-co-v-xep-ly-mn1kaab2",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c73ed"
+  },
+  "name": "Áo croptop thun gân",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7316"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7335"
+  },
+  "brand": "H&M",
+  "importPrice": 120000,
+  "salePrice": 249000,
+  "discountPercent": 0,
+  "quantity": 117,
+  "minStock": 9,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 100,
+  "origin": "Bangladesh",
+  "warranty": "",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "fabric": "Cotton Ribbed",
+    "gender": "Nữ",
+    "type": "Croptop"
+  },
+  "tags": [],
+  "searchKeywords": "Áo croptop thun gân H&M Bangladesh Cotton Ribbed Nữ Croptop",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.255Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.255Z"
+  },
+  "sku": "SP00054",
+  "slug": "ao-croptop-thun-gan-mn1kaab3",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c73f0"
+  },
+  "name": "Áo sơ mi lụa nữ",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7316"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c733a"
+  },
+  "brand": "MWC",
+  "importPrice": 200000,
+  "salePrice": 399000,
+  "discountPercent": 0,
+  "quantity": 192,
+  "minStock": 11,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 120,
+  "origin": "Việt Nam",
+  "warranty": "",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "fabric": "Lụa tơ tằm",
+    "gender": "Nữ"
+  },
+  "tags": [],
+  "searchKeywords": "Áo sơ mi lụa nữ MWC Việt Nam Lụa tơ tằm Nữ",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.256Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-22T05:58:34.727Z"
+  },
+  "sku": "SP00055",
+  "slug": "ao-so-mi-lua-nu-mn1kaab4",
+  "__v": 0,
+  "lastImportDate": {
+    "$date": "2026-03-03T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c73f3"
+  },
+  "name": "Áo len cổ lọ nữ",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7316"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7348"
+  },
+  "brand": "Uniqlo",
+  "importPrice": 350000,
+  "salePrice": 590000,
+  "discountPercent": 0,
+  "quantity": 94,
+  "minStock": 20,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 280,
+  "origin": "Trung Quốc",
+  "warranty": "",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "fabric": "Merino Wool",
+    "gender": "Nữ",
+    "season": "Đông"
+  },
+  "tags": [],
+  "searchKeywords": "Áo len cổ lọ nữ Uniqlo Trung Quốc Merino Wool Nữ Đông",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.256Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.256Z"
+  },
+  "sku": "SP00056",
+  "slug": "ao-len-co-lo-nu-mn1kaab5",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c73f6"
+  },
+  "name": "Áo khoác denim nữ",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7316"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c732c"
+  },
+  "brand": "Levis",
+  "importPrice": 900000,
+  "salePrice": 1590000,
+  "discountPercent": 0,
+  "quantity": 76,
+  "minStock": 11,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 600,
+  "origin": "Bangladesh",
+  "warranty": "",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "fabric": "Denim Cotton",
+    "gender": "Nữ"
+  },
+  "tags": [],
+  "searchKeywords": "Áo khoác denim nữ Levis Bangladesh Denim Cotton Nữ",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.257Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.257Z"
+  },
+  "sku": "SP00057",
+  "slug": "ao-khoac-denim-nu-mn1kaab5",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c73f9"
+  },
+  "name": "Áo cardigan len mỏng nữ",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7316"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c733a"
+  },
+  "brand": "MUJI",
+  "importPrice": 450000,
+  "salePrice": 790000,
+  "discountPercent": 0,
+  "quantity": 174,
+  "minStock": 9,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 200,
+  "origin": "Trung Quốc",
+  "warranty": "",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "fabric": "Cotton Blend",
+    "gender": "Nữ",
+    "type": "Cardigan"
+  },
+  "tags": [],
+  "searchKeywords": "Áo cardigan len mỏng nữ MUJI Trung Quốc Cotton Blend Nữ Cardigan",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.258Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.258Z"
+  },
+  "sku": "SP00058",
+  "slug": "ao-cardigan-len-mong-nu-mn1kaab6",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c73fc"
+  },
+  "name": "Quần jean Slim Fit xanh đậm",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7317"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7321"
+  },
+  "brand": "Levis",
+  "importPrice": 800000,
+  "salePrice": 1390000,
+  "discountPercent": 0,
+  "quantity": 22,
+  "minStock": 8,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 600,
+  "origin": "Bangladesh",
+  "warranty": "",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "fabric": "Denim Stretch",
+    "fit": "Slim Fit",
+    "gender": "Nam"
+  },
+  "tags": [],
+  "searchKeywords": "Quần jean Slim Fit xanh đậm Levis Bangladesh Denim Stretch Slim Fit Nam",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.259Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.259Z"
+  },
+  "sku": "SP00059",
+  "slug": "quan-jean-slim-fit-xanh-dam-mn1kaab7",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c73ff"
+  },
+  "name": "Quần kaki nam Regular",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7317"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7335"
+  },
+  "brand": "Routine",
+  "importPrice": 300000,
+  "salePrice": 550000,
+  "discountPercent": 0,
+  "quantity": 159,
+  "minStock": 13,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 400,
+  "origin": "Việt Nam",
+  "warranty": "",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "fabric": "Cotton Kaki",
+    "fit": "Regular",
+    "gender": "Nam"
+  },
+  "tags": [],
+  "searchKeywords": "Quần kaki nam Regular Routine Việt Nam Cotton Kaki Regular Nam",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.260Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-22T05:58:34.638Z"
+  },
+  "sku": "SP00060",
+  "slug": "quan-kaki-nam-regular-mn1kaab8",
+  "__v": 0,
+  "lastImportDate": {
+    "$date": "2026-03-03T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7402"
+  },
+  "name": "Quần short thể thao",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7317"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c732c"
+  },
+  "brand": "Nike",
+  "importPrice": 350000,
+  "salePrice": 590000,
+  "discountPercent": 0,
+  "quantity": 59,
+  "minStock": 5,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 180,
+  "origin": "Việt Nam",
+  "warranty": "",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "fabric": "Polyester Dri-FIT",
+    "gender": "Nam",
+    "type": "Short"
+  },
+  "tags": [],
+  "searchKeywords": "Quần short thể thao Nike Việt Nam Polyester Dri-FIT Nam Short",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.261Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.261Z"
+  },
+  "sku": "SP00061",
+  "slug": "quan-short-the-thao-mn1kaab9",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7405"
+  },
+  "name": "Quần jogger nam",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7317"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c734b"
+  },
+  "brand": "Adidas",
+  "importPrice": 600000,
+  "salePrice": 990000,
+  "discountPercent": 0,
+  "quantity": 158,
+  "minStock": 10,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 350,
+  "origin": "Trung Quốc",
+  "warranty": "",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "fabric": "Cotton French Terry",
+    "gender": "Nam",
+    "type": "Jogger"
+  },
+  "tags": [],
+  "searchKeywords": "Quần jogger nam Adidas Trung Quốc Cotton French Terry Nam Jogger",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.262Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.262Z"
+  },
+  "sku": "SP00062",
+  "slug": "quan-jogger-nam-mn1kaaba",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7408"
+  },
+  "name": "Quần tây Slim công sở",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7317"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c733a"
+  },
+  "brand": "Aristino",
+  "importPrice": 400000,
+  "salePrice": 690000,
+  "discountPercent": 0,
+  "quantity": 131,
+  "minStock": 20,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 400,
+  "origin": "Việt Nam",
+  "warranty": "",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "fabric": "Polyester + Viscose",
+    "fit": "Slim",
+    "gender": "Nam"
+  },
+  "tags": [],
+  "searchKeywords": "Quần tây Slim công sở Aristino Việt Nam Polyester + Viscose Slim Nam",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.262Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T18:02:22.264Z"
+  },
+  "sku": "SP00063",
+  "slug": "quan-tay-slim-cong-so-mn1kaabb",
+  "__v": 0,
+  "lastImportDate": {
+    "$date": "2026-04-30T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c740b"
+  },
+  "name": "Quần jean skinny đen",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7317"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c734b"
+  },
+  "brand": "Zara",
+  "importPrice": 500000,
+  "salePrice": 890000,
+  "discountPercent": 0,
+  "quantity": 24,
+  "minStock": 8,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 550,
+  "origin": "Thổ Nhĩ Kỳ",
+  "warranty": "",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "fabric": "Denim Stretch",
+    "fit": "Skinny",
+    "color": "Đen",
+    "gender": "Nam"
+  },
+  "tags": [],
+  "searchKeywords": "Quần jean skinny đen Zara Thổ Nhĩ Kỳ Denim Stretch Skinny Đen Nam",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.263Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.263Z"
+  },
+  "sku": "SP00064",
+  "slug": "quan-jean-skinny-den-mn1kaabc",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c740e"
+  },
+  "name": "Quần jean nữ boyfriend rách",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7318"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c734b"
+  },
+  "brand": "Levis",
+  "importPrice": 700000,
+  "salePrice": 1190000,
+  "discountPercent": 0,
+  "quantity": 53,
+  "minStock": 9,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 550,
+  "origin": "Bangladesh",
+  "warranty": "",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "fabric": "Denim",
+    "fit": "Boyfriend",
+    "gender": "Nữ"
+  },
+  "tags": [],
+  "searchKeywords": "Quần jean nữ boyfriend rách Levis Bangladesh Denim Boyfriend Nữ",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.264Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.264Z"
+  },
+  "sku": "SP00065",
+  "slug": "quan-jean-nu-boyfriend-rach-mn1kaabd",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7411"
+  },
+  "name": "Váy midi xếp ly",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7318"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c732c"
+  },
+  "brand": "Zara",
+  "importPrice": 500000,
+  "salePrice": 890000,
+  "discountPercent": 0,
+  "quantity": 22,
+  "minStock": 16,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 200,
+  "origin": "Maroc",
+  "warranty": "",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "fabric": "Polyester",
+    "type": "Váy midi",
+    "gender": "Nữ"
+  },
+  "tags": [],
+  "searchKeywords": "Váy midi xếp ly Zara Maroc Polyester Váy midi Nữ",
+  "viewCount": 0,
+  "soldCount": 50,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.265Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-21T06:45:44.317Z"
+  },
+  "sku": "SP00066",
+  "slug": "vay-midi-xep-ly-mn1kaabe",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7414"
+  },
+  "name": "Chân váy chữ A công sở",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7318"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7335"
+  },
+  "brand": "MWC",
+  "importPrice": 200000,
+  "salePrice": 390000,
+  "discountPercent": 0,
+  "quantity": 84,
+  "minStock": 9,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 180,
+  "origin": "Việt Nam",
+  "warranty": "",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "fabric": "Polyester Blend",
+    "gender": "Nữ"
+  },
+  "tags": [],
+  "searchKeywords": "Chân váy chữ A công sở MWC Việt Nam Polyester Blend Nữ",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.266Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.266Z"
+  },
+  "sku": "SP00067",
+  "slug": "chan-vay-chu-a-cong-so-mn1kaabf",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7417"
+  },
+  "name": "Quần legging thể thao nữ",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7318"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7348"
+  },
+  "brand": "Nike",
+  "importPrice": 500000,
+  "salePrice": 890000,
+  "discountPercent": 0,
+  "quantity": 185,
+  "minStock": 10,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 200,
+  "origin": "Việt Nam",
+  "warranty": "",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "fabric": "Nylon Spandex",
+    "gender": "Nữ",
+    "type": "Legging"
+  },
+  "tags": [],
+  "searchKeywords": "Quần legging thể thao nữ Nike Việt Nam Nylon Spandex Nữ Legging",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.267Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.267Z"
+  },
+  "sku": "SP00068",
+  "slug": "quan-legging-the-thao-nu-mn1kaabf",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c741a"
+  },
+  "name": "Quần culottes nữ ống rộng",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7318"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7326"
+  },
+  "brand": "Uniqlo",
+  "importPrice": 350000,
+  "salePrice": 599000,
+  "discountPercent": 0,
+  "quantity": 197,
+  "minStock": 20,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 250,
+  "origin": "Việt Nam",
+  "warranty": "",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "fabric": "Linen Blend",
+    "gender": "Nữ",
+    "fit": "Ống rộng"
+  },
+  "tags": [],
+  "searchKeywords": "Quần culottes nữ ống rộng Uniqlo Việt Nam Linen Blend Nữ Ống rộng",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.268Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-22T05:58:34.742Z"
+  },
+  "sku": "SP00069",
+  "slug": "quan-culottes-nu-ong-rong-mn1kaabg",
+  "__v": 0,
+  "lastImportDate": {
+    "$date": "2026-03-03T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c741d"
+  },
+  "name": "Quần short jean nữ cạp cao",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7318"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7335"
+  },
+  "brand": "H&M",
+  "importPrice": 250000,
+  "salePrice": 449000,
+  "discountPercent": 0,
+  "quantity": 125,
+  "minStock": 12,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 300,
+  "origin": "Bangladesh",
+  "warranty": "",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "fabric": "Denim",
+    "gender": "Nữ",
+    "type": "Short"
+  },
+  "tags": [],
+  "searchKeywords": "Quần short jean nữ cạp cao H&M Bangladesh Denim Nữ Short",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.268Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-22T05:58:34.692Z"
+  },
+  "sku": "SP00070",
+  "slug": "quan-short-jean-nu-cap-cao-mn1kaabh",
+  "__v": 0,
+  "lastImportDate": {
+    "$date": "2026-03-03T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7420"
+  },
+  "name": "Son YSL Rouge Pur Couture",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7319"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7348"
+  },
+  "brand": "YSL",
+  "importPrice": 600000,
+  "salePrice": 990000,
+  "discountPercent": 0,
+  "quantity": 94,
+  "minStock": 20,
+  "unit": "Chiếc",
+  "thumbnail": "",
+  "images": [],
+  "weight": 30,
+  "origin": "Pháp",
+  "warranty": "24 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "type": "Son thỏi",
+    "finish": "Satin"
+  },
+  "tags": [],
+  "searchKeywords": "Son YSL Rouge Pur Couture YSL Pháp Son thỏi Satin",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.269Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.269Z"
+  },
+  "sku": "SP00071",
+  "slug": "son-ysl-rouge-pur-couture-mn1kaabh",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7423"
+  },
+  "name": "Kem chống nắng Anessa",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7319"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c733a"
+  },
+  "brand": "Anessa",
+  "importPrice": 350000,
+  "salePrice": 590000,
+  "discountPercent": 0,
+  "quantity": 112,
+  "minStock": 6,
+  "unit": "Chai",
+  "thumbnail": "",
+  "images": [],
+  "weight": 60,
+  "origin": "Nhật Bản",
+  "warranty": "36 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "attributes": {
+    "spf": "SPF50+ PA++++",
+    "volume": "60ml"
+  },
+  "tags": [],
+  "searchKeywords": "Kem chống nắng Anessa Anessa Nhật Bản SPF50+ PA++++ 60ml",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.270Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-22T05:58:34.695Z"
+  },
+  "sku": "SP00072",
+  "slug": "kem-chong-nang-anessa-mn1kaabi",
+  "__v": 0,
+  "lastImportDate": {
+    "$date": "2026-03-03T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7426"
+  },
+  "name": "Serum Vitamin C Klairs",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7319"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c734b"
+  },
+  "brand": "Klairs",
+  "importPrice": 250000,
+  "salePrice": 420000,
+  "discountPercent": 0,
+  "quantity": 140,
+  "minStock": 6,
+  "unit": "Chai",
+  "thumbnail": "https://res.cloudinary.com/djh1ruskj/image/upload/v1776154157/ql-kho/products/apselzp4pliounzcnz8z.jpg",
+  "images": [
+    "https://res.cloudinary.com/djh1ruskj/image/upload/v1776154157/ql-kho/products/apselzp4pliounzcnz8z.jpg"
+  ],
+  "weight": 35,
+  "origin": "Hàn Quốc",
+  "warranty": "24 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "tags": [],
+  "searchKeywords": "Serum Vitamin C Klairs Klairs Hàn Quốc",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.271Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-21T06:48:40.302Z"
+  },
+  "sku": "SP00073",
+  "slug": "serum-vitamin-c-klairs-mn1kaabj",
+  "__v": 1,
+  "lastImportDate": {
+    "$date": "2026-04-20T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7429"
+  },
+  "name": "Kem dưỡng ẩm Laneige",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7319"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7344"
+  },
+  "brand": "Laneige",
+  "importPrice": 400000,
+  "salePrice": 690000,
+  "discountPercent": 0,
+  "quantity": 77,
+  "minStock": 7,
+  "unit": "Hộp",
+  "thumbnail": "https://res.cloudinary.com/djh1ruskj/image/upload/v1776154064/ql-kho/products/lgxxy8cbkhnp1kjr3a8i.jpg",
+  "images": [
+    "https://res.cloudinary.com/djh1ruskj/image/upload/v1776154064/ql-kho/products/lgxxy8cbkhnp1kjr3a8i.jpg"
+  ],
+  "weight": 50,
+  "origin": "Hàn Quốc",
+  "warranty": "36 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "tags": [],
+  "searchKeywords": "Kem dưỡng ẩm Laneige Laneige Hàn Quốc",
+  "viewCount": 1,
+  "soldCount": 100,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.272Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-06T04:42:05.795Z"
+  },
+  "sku": "SP00074",
+  "slug": "kem-duong-am-laneige-mn1kaabk",
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c742c"
+  },
+  "name": "Toner Hada Labo Gokujyun",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7319"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7335"
+  },
+  "brand": "Hada Labo",
+  "importPrice": 180000,
+  "salePrice": 299000,
+  "discountPercent": 0,
+  "quantity": 117,
+  "minStock": 18,
+  "unit": "Chai",
+  "thumbnail": "https://res.cloudinary.com/djh1ruskj/image/upload/v1776154103/ql-kho/products/x0dafxzusiqzh9eydebp.jpg",
+  "images": [
+    "https://res.cloudinary.com/djh1ruskj/image/upload/v1776154103/ql-kho/products/x0dafxzusiqzh9eydebp.jpg"
+  ],
+  "weight": 170,
+  "origin": "Nhật Bản",
+  "warranty": "36 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "tags": [],
+  "searchKeywords": "Toner Hada Labo Gokujyun Hada Labo Nhật Bản",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.272Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-22T05:58:34.701Z"
+  },
+  "sku": "SP00075",
+  "slug": "toner-hada-labo-gokujyun-mn1kaabl",
+  "__v": 1,
+  "lastImportDate": {
+    "$date": "2026-03-03T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c742f"
+  },
+  "name": "Cushion Maybelline Fit Me",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7319"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7348"
+  },
+  "brand": "Maybelline",
+  "importPrice": 150000,
+  "salePrice": 269000,
+  "discountPercent": 0,
+  "quantity": 118,
+  "minStock": 7,
+  "unit": "Chiếc",
+  "thumbnail": "https://res.cloudinary.com/djh1ruskj/image/upload/v1776154032/ql-kho/products/jufd3l47flgrfscsoucj.jpg",
+  "images": [
+    "https://res.cloudinary.com/djh1ruskj/image/upload/v1776154032/ql-kho/products/jufd3l47flgrfscsoucj.jpg"
+  ],
+  "weight": 15,
+  "origin": "Trung Quốc",
+  "warranty": "24 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "tags": [],
+  "searchKeywords": "Cushion Maybelline Fit Me Maybelline Trung Quốc",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.273Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-22T05:58:34.686Z"
+  },
+  "sku": "SP00076",
+  "slug": "cushion-maybelline-fit-me-mn1kaabm",
+  "__v": 1,
+  "lastImportDate": {
+    "$date": "2026-03-03T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7432"
+  },
+  "name": "Mascara Maybelline Lash Sensational",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7319"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c734b"
+  },
+  "brand": "Maybelline",
+  "importPrice": 120000,
+  "salePrice": 219000,
+  "discountPercent": 0,
+  "quantity": 14,
+  "minStock": 18,
+  "unit": "Chiếc",
+  "thumbnail": "https://res.cloudinary.com/djh1ruskj/image/upload/v1776153988/ql-kho/products/xrlgdbvkm4zg621ro4pd.jpg",
+  "images": [
+    "https://res.cloudinary.com/djh1ruskj/image/upload/v1776153988/ql-kho/products/xrlgdbvkm4zg621ro4pd.jpg"
+  ],
+  "weight": 10,
+  "origin": "Trung Quốc",
+  "warranty": "12 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "tags": [],
+  "searchKeywords": "Mascara Maybelline Lash Sensational Maybelline Trung Quốc",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.274Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-14T08:06:28.935Z"
+  },
+  "sku": "SP00077",
+  "slug": "mascara-maybelline-lash-sensational-mn1kaabn",
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7435"
+  },
+  "name": "Phấn phủ Innisfree No Sebum",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c7319"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7321"
+  },
+  "brand": "Innisfree",
+  "importPrice": 100000,
+  "salePrice": 185000,
+  "discountPercent": 0,
+  "quantity": 163,
+  "minStock": 16,
+  "unit": "Chiếc",
+  "thumbnail": "https://res.cloudinary.com/djh1ruskj/image/upload/v1776153953/ql-kho/products/xppx1myqcakb7xfub0um.jpg",
+  "images": [
+    "https://res.cloudinary.com/djh1ruskj/image/upload/v1776153953/ql-kho/products/xppx1myqcakb7xfub0um.jpg"
+  ],
+  "weight": 5,
+  "origin": "Hàn Quốc",
+  "warranty": "24 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "tags": [],
+  "searchKeywords": "Phấn phủ Innisfree No Sebum Innisfree Hàn Quốc",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.275Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-14T08:05:55.178Z"
+  },
+  "sku": "SP00078",
+  "slug": "phan-phu-innisfree-no-sebum-mn1kaabn",
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7438"
+  },
+  "name": "Dầu gội Clear Men Cool Sport",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c731a"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7335"
+  },
+  "brand": "Clear",
+  "importPrice": 60000,
+  "salePrice": 109000,
+  "discountPercent": 0,
+  "quantity": 151,
+  "minStock": 13,
+  "unit": "Chai",
+  "thumbnail": "https://res.cloudinary.com/djh1ruskj/image/upload/v1776153922/ql-kho/products/r3wspjghdjbviefzgipo.jpg",
+  "images": [
+    "https://res.cloudinary.com/djh1ruskj/image/upload/v1776153922/ql-kho/products/r3wspjghdjbviefzgipo.jpg"
+  ],
+  "weight": 650,
+  "origin": "Việt Nam",
+  "warranty": "24 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "tags": [],
+  "searchKeywords": "Dầu gội Clear Men Cool Sport Clear Việt Nam",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.276Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-14T08:05:23.024Z"
+  },
+  "sku": "SP00079",
+  "slug": "dau-goi-clear-men-cool-sport-mn1kaabo",
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c743b"
+  },
+  "name": "Sữa tắm Dove Beauty Bar",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c731a"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c733a"
+  },
+  "brand": "Dove",
+  "importPrice": 40000,
+  "salePrice": 79000,
+  "discountPercent": 0,
+  "quantity": 123,
+  "minStock": 15,
+  "unit": "Chai",
+  "thumbnail": "https://res.cloudinary.com/djh1ruskj/image/upload/v1776153888/ql-kho/products/uk8au65ndjhih0pswcty.jpg",
+  "images": [
+    "https://res.cloudinary.com/djh1ruskj/image/upload/v1776153888/ql-kho/products/uk8au65ndjhih0pswcty.jpg"
+  ],
+  "weight": 500,
+  "origin": "Việt Nam",
+  "warranty": "24 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "tags": [],
+  "searchKeywords": "Sữa tắm Dove Beauty Bar Dove Việt Nam",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.277Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-14T08:04:49.083Z"
+  },
+  "sku": "SP00080",
+  "slug": "sua-tam-dove-beauty-bar-mn1kaabp",
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c743e"
+  },
+  "name": "Kem đánh răng Sensodyne",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c731a"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7344"
+  },
+  "brand": "Sensodyne",
+  "importPrice": 45000,
+  "salePrice": 82000,
+  "discountPercent": 0,
+  "quantity": 71,
+  "minStock": 8,
+  "unit": "Tuýp",
+  "thumbnail": "https://res.cloudinary.com/djh1ruskj/image/upload/v1776153831/ql-kho/products/rrxv2g3ogkg5ukywwnmj.jpg",
+  "images": [
+    "https://res.cloudinary.com/djh1ruskj/image/upload/v1776153831/ql-kho/products/rrxv2g3ogkg5ukywwnmj.jpg"
+  ],
+  "weight": 100,
+  "origin": "Thái Lan",
+  "warranty": "36 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "tags": [],
+  "searchKeywords": "Kem đánh răng Sensodyne Sensodyne Thái Lan",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.278Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-14T08:03:51.464Z"
+  },
+  "sku": "SP00081",
+  "slug": "kem-danh-rang-sensodyne-mn1kaabq",
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7441"
+  },
+  "name": "Nước hoa Dior Sauvage EDT",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c731a"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7326"
+  },
+  "brand": "Dior",
+  "importPrice": 1800000,
+  "salePrice": 2790000,
+  "discountPercent": 0,
+  "quantity": 113,
+  "minStock": 13,
+  "unit": "Chai",
+  "thumbnail": "https://res.cloudinary.com/djh1ruskj/image/upload/v1776153802/ql-kho/products/xlpia3xg4awa9x5zg3ug.jpg",
+  "images": [
+    "https://res.cloudinary.com/djh1ruskj/image/upload/v1776153802/ql-kho/products/xlpia3xg4awa9x5zg3ug.jpg"
+  ],
+  "weight": 100,
+  "origin": "Pháp",
+  "warranty": "36 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "tags": [],
+  "searchKeywords": "Nước hoa Dior Sauvage EDT Dior Pháp",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.279Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-14T08:03:23.297Z"
+  },
+  "sku": "SP00082",
+  "slug": "nuoc-hoa-dior-sauvage-edt-mn1kaabs",
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7444"
+  },
+  "name": "Lăn khử mùi Nivea Men",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c731a"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7344"
+  },
+  "brand": "Nivea",
+  "importPrice": 40000,
+  "salePrice": 69000,
+  "discountPercent": 0,
+  "quantity": 176,
+  "minStock": 17,
+  "unit": "Chai",
+  "thumbnail": "https://res.cloudinary.com/djh1ruskj/image/upload/v1776153773/ql-kho/products/qjntxrtqiaqzx8nnxlbg.jpg",
+  "images": [
+    "https://res.cloudinary.com/djh1ruskj/image/upload/v1776153773/ql-kho/products/qjntxrtqiaqzx8nnxlbg.jpg"
+  ],
+  "weight": 50,
+  "origin": "Thái Lan",
+  "warranty": "24 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "tags": [],
+  "searchKeywords": "Lăn khử mùi Nivea Men Nivea Thái Lan",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.281Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-22T05:58:34.689Z"
+  },
+  "sku": "SP00083",
+  "slug": "lan-khu-mui-nivea-men-mn1kaabt",
+  "__v": 1,
+  "lastImportDate": {
+    "$date": "2026-03-03T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7447"
+  },
+  "name": "Dầu xả TRESemmé Salon",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c731a"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c733f"
+  },
+  "brand": "TRESemmé",
+  "importPrice": 70000,
+  "salePrice": 125000,
+  "discountPercent": 0,
+  "quantity": 202,
+  "minStock": 20,
+  "unit": "Chai",
+  "thumbnail": "https://res.cloudinary.com/djh1ruskj/image/upload/v1776153735/ql-kho/products/axjn6qll2evcavalr8gi.jpg",
+  "images": [
+    "https://res.cloudinary.com/djh1ruskj/image/upload/v1776153735/ql-kho/products/axjn6qll2evcavalr8gi.jpg"
+  ],
+  "weight": 620,
+  "origin": "Việt Nam",
+  "warranty": "24 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "tags": [],
+  "searchKeywords": "Dầu xả TRESemmé Salon TRESemmé Việt Nam",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.282Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-22T05:58:34.683Z"
+  },
+  "sku": "SP00084",
+  "slug": "dau-xa-tresemme-salon-mn1kaabu",
+  "__v": 1,
+  "lastImportDate": {
+    "$date": "2026-03-03T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7459"
+  },
+  "name": "Túi xách nữ Charles & Keith",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c731c"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7335"
+  },
+  "brand": "Charles & Keith",
+  "importPrice": 800000,
+  "salePrice": 1290000,
+  "discountPercent": 0,
+  "quantity": 78,
+  "minStock": 18,
+  "unit": "Chiếc",
+  "thumbnail": "https://res.cloudinary.com/djh1ruskj/image/upload/v1776153652/ql-kho/products/xuk5yihrqotexvpzkq13.jpg",
+  "images": [
+    "https://res.cloudinary.com/djh1ruskj/image/upload/v1776153652/ql-kho/products/xuk5yihrqotexvpzkq13.jpg"
+  ],
+  "weight": 350,
+  "origin": "Trung Quốc",
+  "warranty": "6 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "tags": [],
+  "searchKeywords": "Túi xách nữ Charles & Keith Charles & Keith Trung Quốc",
+  "viewCount": 3,
+  "soldCount": 20,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.289Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-21T06:56:57.476Z"
+  },
+  "sku": "SP00090",
+  "slug": "tui-xach-nu-charles-keith-mn1kaac2",
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7462"
+  },
+  "name": "Túi tote vải canvas",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c731c"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7326"
+  },
+  "brand": "MUJI",
+  "importPrice": 200000,
+  "salePrice": 390000,
+  "discountPercent": 0,
+  "quantity": 232,
+  "minStock": 18,
+  "unit": "Chiếc",
+  "thumbnail": "https://res.cloudinary.com/djh1ruskj/image/upload/v1776153618/ql-kho/products/cjweju9j864a0puu63td.jpg",
+  "images": [
+    "https://res.cloudinary.com/djh1ruskj/image/upload/v1776153618/ql-kho/products/cjweju9j864a0puu63td.jpg"
+  ],
+  "weight": 250,
+  "origin": "Trung Quốc",
+  "warranty": "",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "tags": [],
+  "searchKeywords": "Túi tote vải canvas MUJI Trung Quốc",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.291Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T13:04:07.946Z"
+  },
+  "sku": "SP00093",
+  "slug": "tui-tote-vai-canvas-mn1kaac4",
+  "__v": 1,
+  "lastImportDate": {
+    "$date": "2026-03-03T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7468"
+  },
+  "name": "Sữa tươi Vinamilk 100% 1L",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c731d"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c733f"
+  },
+  "brand": "Vinamilk",
+  "importPrice": 25000,
+  "salePrice": 36000,
+  "discountPercent": 0,
+  "quantity": 70,
+  "minStock": 7,
+  "unit": "Hộp",
+  "thumbnail": "https://res.cloudinary.com/djh1ruskj/image/upload/v1776153523/ql-kho/products/at2iwpjn9dye06mtwxet.jpg",
+  "images": [
+    "https://res.cloudinary.com/djh1ruskj/image/upload/v1776153523/ql-kho/products/at2iwpjn9dye06mtwxet.jpg"
+  ],
+  "weight": 1050,
+  "origin": "Việt Nam",
+  "warranty": "6 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "tags": [],
+  "searchKeywords": "Sữa tươi Vinamilk 100% 1L Vinamilk Việt Nam",
+  "viewCount": 0,
+  "soldCount": 150,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.293Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T17:59:52.744Z"
+  },
+  "sku": "SP00095",
+  "slug": "sua-tuoi-vinamilk-100-1l-mn1kaac5",
+  "__v": 1,
+  "lastImportDate": {
+    "$date": "2026-03-03T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c746b"
+  },
+  "name": "Cà phê G7 hòa tan 3in1 hộp 20 gói",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c731d"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c734b"
+  },
+  "brand": "Trung Nguyên",
+  "importPrice": 35000,
+  "salePrice": 55000,
+  "discountPercent": 0,
+  "quantity": 40,
+  "minStock": 7,
+  "unit": "Hộp",
+  "thumbnail": "https://res.cloudinary.com/djh1ruskj/image/upload/v1776153490/ql-kho/products/cmxppxeopwpvlpbf68zp.jpg",
+  "images": [
+    "https://res.cloudinary.com/djh1ruskj/image/upload/v1776153490/ql-kho/products/cmxppxeopwpvlpbf68zp.jpg"
+  ],
+  "weight": 320,
+  "origin": "Việt Nam",
+  "warranty": "24 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "tags": [],
+  "searchKeywords": "Cà phê G7 hòa tan 3in1 hộp 20 gói Trung Nguyên Việt Nam",
+  "viewCount": 0,
+  "soldCount": 110,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.294Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T17:59:52.740Z"
+  },
+  "sku": "SP00096",
+  "slug": "ca-phe-g7-hoa-tan-3in1-hop-20-goi-mn1kaac6",
+  "__v": 1,
+  "lastImportDate": {
+    "$date": "2026-03-03T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c746e"
+  },
+  "name": "Nước suối Aquafina 500ml thùng 24 chai",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c731d"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c733f"
+  },
+  "brand": "PepsiCo",
+  "importPrice": 50000,
+  "salePrice": 79000,
+  "discountPercent": 0,
+  "quantity": 80,
+  "minStock": 19,
+  "unit": "Thùng",
+  "thumbnail": "https://res.cloudinary.com/djh1ruskj/image/upload/v1776153454/ql-kho/products/ntsvhyqtjnjhobrowlu0.jpg",
+  "images": [
+    "https://res.cloudinary.com/djh1ruskj/image/upload/v1776153454/ql-kho/products/ntsvhyqtjnjhobrowlu0.jpg"
+  ],
+  "weight": 12500,
+  "origin": "Việt Nam",
+  "warranty": "12 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "tags": [],
+  "searchKeywords": "Nước suối Aquafina 500ml thùng 24 chai PepsiCo Việt Nam",
+  "viewCount": 0,
+  "soldCount": 120,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.295Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T17:59:52.737Z"
+  },
+  "sku": "SP00097",
+  "slug": "nuoc-suoi-aquafina-500ml-thung-24-chai-mn1kaac7",
+  "__v": 1,
+  "lastImportDate": {
+    "$date": "2026-04-07T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7471"
+  },
+  "name": "Trà sữa Nestea 255ml lốc 6 lon",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c731d"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7321"
+  },
+  "brand": "Nestlé",
+  "importPrice": 30000,
+  "salePrice": 48000,
+  "discountPercent": 0,
+  "quantity": 185,
+  "minStock": 10,
+  "unit": "Lốc",
+  "thumbnail": "https://res.cloudinary.com/djh1ruskj/image/upload/v1776153340/ql-kho/products/ka7jqbu4irxmw3pipt96.jpg",
+  "images": [
+    "https://res.cloudinary.com/djh1ruskj/image/upload/v1776153340/ql-kho/products/ka7jqbu4irxmw3pipt96.jpg"
+  ],
+  "weight": 1600,
+  "origin": "Việt Nam",
+  "warranty": "12 tháng",
+  "barcode": "",
+  "hasVariants": false,
+  "variantFields": [],
+  "tags": [],
+  "searchKeywords": "Trà sữa Nestea 255ml lốc 6 lon Nestlé Việt Nam",
+  "viewCount": 0,
+  "soldCount": 0,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.295Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:02:55.807Z"
+  },
+  "sku": "SP00098",
+  "slug": "tra-sua-nestea-255ml-loc-6-lon-mn1kaac8",
+  "__v": 1,
+  "lastImportDate": {
+    "$date": "2026-04-07T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7474"
+  },
+  "name": "Bánh Oreo kem Socola 133g",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c731d"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c733a"
+  },
+  "brand": "Mondelez",
+  "importPrice": 18000,
+  "salePrice": 29000,
+  "discountPercent": 0,
+  "quantity": 51,
+  "minStock": 19,
+  "unit": "Gói",
+  "thumbnail": "https://res.cloudinary.com/djh1ruskj/image/upload/v1776153302/ql-kho/products/lcmng1jbk0mu7zq40gbf.jpg",
+  "images": [
+    "https://res.cloudinary.com/djh1ruskj/image/upload/v1776153302/ql-kho/products/lcmng1jbk0mu7zq40gbf.jpg"
+  ],
+  "weight": 133,
+  "origin": "Trung Quốc",
+  "warranty": "12 tháng",
+  "barcode": "SP001",
+  "hasVariants": false,
+  "variantFields": [],
+  "tags": [],
+  "searchKeywords": "Bánh Oreo kem Socola 133g Mondelez Trung Quốc",
+  "viewCount": 1,
+  "soldCount": 150,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.296Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T17:59:52.732Z"
+  },
+  "sku": "SP00099",
+  "slug": "banh-oreo-kem-socola-133g-mn1kaac8",
+  "__v": 1,
+  "lastImportDate": {
+    "$date": "2026-03-03T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69e314e7bf59d77e52aadd70"
+  },
+  "name": "iPhone 13 Pro Max",
+  "description": "",
+  "category": {
+    "$oid": "69bfb7ee8f6e87250e0c730f"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7326"
+  },
+  "brand": "Apple",
+  "importPrice": 14000000,
+  "salePrice": 16990000,
+  "discountPercent": 0,
+  "quantity": 25,
+  "minStock": 10,
+  "unit": "Chiếc",
+  "lastImportDate": {
+    "$date": "2026-04-30T17:00:00.000Z"
+  },
+  "thumbnail": "https://res.cloudinary.com/djh1ruskj/image/upload/v1778297822/ql-kho/products/euitapj86mgyi0acyiuu.jpg",
+  "images": [
+    "https://res.cloudinary.com/djh1ruskj/image/upload/v1778297822/ql-kho/products/euitapj86mgyi0acyiuu.jpg"
+  ],
+  "weight": 0,
+  "origin": "Trung Quốc",
+  "warranty": "12 tháng",
+  "barcode": "IP13",
+  "hasVariants": false,
+  "variantFields": [],
+  "tags": [
+    "Hot"
+  ],
+  "searchKeywords": "iPhone 13 Pro Max Apple Trung Quốc Hot",
+  "viewCount": 3,
+  "soldCount": 128,
+  "rating": 0,
+  "ratingCount": 0,
+  "status": "active",
+  "isFeatured": false,
+  "variants": [],
+  "createdAt": {
+    "$date": "2026-04-18T05:21:43.396Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-09T03:37:02.671Z"
+  },
+  "sku": "SP00088",
+  "slug": "iphone-13-pro-max-mo3w3nxu",
+  "__v": 2
+}]
