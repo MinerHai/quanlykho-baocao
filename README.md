@@ -134,7 +134,7 @@ Client chạy ở cổng **5173** (`vite.config.js`), gọi API ở `http://loca
 
 ### Bước 4: Cấu hình biến môi trường
 
-Tạo file `.env` trong thư mục `server/`:
+Tạo file `.env` trong thư mục `server/` (có sẵn mẫu `server/.env.example`, chỉ cần sao chép rồi điền giá trị):
 ```env
 # MongoDB (local hoặc Atlas), tên biến trong code là CONNECT_DB
 CONNECT_DB=mongodb://localhost:27017/ql-kho
